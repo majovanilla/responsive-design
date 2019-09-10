@@ -150,6 +150,7 @@ header {
   position: fixed;
   top: 0;
   height: 100px;
+  width: 100%;
 }
 
 main {
@@ -171,11 +172,42 @@ footer {
   background-color: black;
   bottom: 0;
   height: 260px;
+  clear: both;
 }
 
 /* ----------- Header -------------*/
 
+header ul {
+  display: flex;
+  width: 100%;
+}
+
+header ul li {
+  padding: 5px 10px;
+}
+
+header section {
+  background-color: black;
+  height: 30px;
+  width: 100%;
+  color: lightgray;
+}
+
+header section:nth-of-type(2) {
+  background-color: white;
+  height: 50px;
+}
+
+header section:nth-of-type(3) {
+  background-color: yellow;
+  height: 30px;
+  color: black;
+}
+
 /* ---------- Main --------------- */
+
+
+
 /* ----------- Latest News ---------- */
 
 #latest-news article {
@@ -198,9 +230,6 @@ footer {
   margin-bottom: 20px;
 }
 /* ----------- Latest Deals ----------------*/
-#latest-deals {
-  padding-bottom: 260px;
-}
 
 #latest-deals article {
   height: 600px;
@@ -209,6 +238,22 @@ footer {
 }
 
 /* ----------- Footer ----------------*/
+footer ul {
+  display: flex;
+  margin: auto;
+}
+
+footer ul:nth-child(1) li {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 5px;
+}
+
+footer ul li {
+  color: lightgray;
+}
 
 /* -------------- GRID STRUCTURE --------------- */
 .h100 {
