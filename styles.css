@@ -168,10 +168,10 @@ section {
 footer {
   width: 100%;
   position: relative;
-  background-color: black;
   bottom: 0;
   height: 260px;
   clear: both;
+  background-color: black;
 }
 
 /* ----------- Header -------------*/
@@ -248,6 +248,14 @@ main .g2-3 {
   margin-bottom: 20px;
 }
 
+/* ----------- Apple ---------- */
+
+#apple article {
+  height: 250px;
+  float: left;
+  margin-bottom: 20px;
+}
+
 /* ----------- Latest Funding ----------------*/
 #latest-funding article {
   height: 275px;
@@ -270,9 +278,15 @@ main .g2-3 {
 
 /* ----------- Articles ----------------*/
 #articles article {
-  height: 700px;
+  height: 650px;
   float: left;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 760px) {
+  #articles article {
+    height: 810px;
+  }
 }
 /* ----------- Latest Deals ----------------*/
 
@@ -281,17 +295,30 @@ main .g2-3 {
   float: left;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 1020px) {
+  #latest-deals article {
+    height: 290px;
+    padding: 5px;
+  }
+}
 
 @media only screen and (max-width: 760px) {
   #latest-deals article {
     height: 80px;
-    margin-bottom: 5px;
+    padding: 5px;
   }
 }
 
 /* ----------- Footer ----------------*/
 footer section {
   width: 100%;
+  height: 90px;
+  padding-top: 40px;
+}
+
+footer section:nth-of-type(1) {
+  height: 160px;
+  background-color: #131313;
 }
 
 footer ul {
@@ -303,7 +330,7 @@ footer ul:nth-child(1) li {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: #555;
   margin: 5px;
 }
 
@@ -330,6 +357,18 @@ footer ul:nth-of-type(2) li {
 
 .g1-3 {
   width: 33.33%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .g1-3 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .g1-3 {
+    width: 100%;
+  }
 }
 
 .g2-3 {
