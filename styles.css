@@ -177,32 +177,45 @@ footer {
 }
 
 /* ----------- Header -------------*/
-
-header ul {
-  display: flex;
-  width: 100%;
-}
-
-header ul li {
-  padding: 5px 10px;
-}
-
 header section {
   background-color: black;
   height: 30px;
   width: 100%;
   color: lightgray;
+  padding-left: 15px;
+}
+
+header ul {
+  display: inline-flex;
+  width: 50%;
+}
+
+header ul:nth-of-type(2) {
+  justify-content: flex-end;
+  float: right;
+}
+
+header ul li {
+  padding: 5px 10px 5px 0;
 }
 
 header section:nth-of-type(2) {
   background-color: white;
   height: 50px;
+  padding-top: 10px;
+}
+header section ul li a {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) 16px /0 65%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
 }
 
 header section:nth-of-type(3) {
   background-color: yellow;
   height: 30px;
   color: black;
+  padding-top: 5px;
 }
 
 @media only screen and (max-width: 760px) {
