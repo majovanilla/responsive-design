@@ -186,6 +186,27 @@ h1 {
   z-index: 98;
 }
 
+h3 {
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+  padding: 10px 0 15px 0;
+  line-height: normal;
+}
+
+h5 {
+  font-size: 0.75em;
+  color: #aaa;
+  padding: 10px 0 10px 0;
+}
+
+.section-title {
+  font-size: 1.75em;
+  color: #f42;
+  font-weight: bold;
+  padding: 40px 0 20px 0;
+}
+
 /* ----------- Header ------------- */
 header section {
   background-color: black;
@@ -328,14 +349,20 @@ main .g2-3 {
 
 /* ----------- Latest News ---------- */
 
+#latest-news {
+  padding-top: 40px;
+}
+
 #latest-news article {
   height: 250px;
   float: left;
   margin-bottom: 20px;
+  padding-right: 15px;
 }
 
 #latest-news article a img {
   width: 100%;
+  height: 50%;
 }
 
 /* ----------- Apple ---------- */
@@ -485,4 +512,8 @@ footer ul:nth-of-type(2) li {
 
 .f-left {
   float: left;
+}
+
+a {
+  text-decoration: none;
 }
