@@ -90,6 +90,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -156,7 +157,7 @@ header {
 }
 
 main {
-  margin-top: 112px;
+  margin-top: 115px;
   position: relative;
   width: 100%;
 }
@@ -232,12 +233,15 @@ header section:nth-of-type(3) {
 
 main article {
   position: relative;
+  border-bottom: white 8px solid;
+  border-right: white 8px solid;
 }
 
 main article:nth-of-type(1) {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/telegram-cryptocurrency-796x417.png)
     50% no-repeat;
   background-size: cover;
+  border-left: white 5px solid;
 }
 
 main article:nth-of-type(2) {
@@ -304,6 +308,10 @@ main .g2-3 {
   height: 250px;
   float: left;
   margin-bottom: 20px;
+}
+
+#latest-news article a img {
+  width: 100%;
 }
 
 /* ----------- Apple ---------- */
