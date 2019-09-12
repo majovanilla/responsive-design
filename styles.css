@@ -205,7 +205,8 @@ header section:nth-of-type(2) {
   padding-top: 10px;
 }
 header section ul li a {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) 16px /0 65%;
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
+    16px /0 65%;
   height: 50px;
   width: 50px;
   position: absolute;
@@ -229,20 +230,42 @@ header section:nth-of-type(3) {
 
 /* ---------- Main --------------- */
 
+main article {
+  position: relative;
+}
+
 main article:nth-of-type(1) {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/iphone11-796x419.jpg)
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/telegram-cryptocurrency-796x417.png)
     50% no-repeat;
   background-size: cover;
 }
 
+main article:nth-of-type(2) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay-796x530.jpg)
+    50% no-repeat;
+  background-size: cover;
+}
+
+main article:nth-of-type(3) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/facebook-libra-cryptocurrency-EU-796x417.jpg)
+    50% no-repeat;
+  background-size: cover;
+}
+
+main article div {
+  background: linear-gradient(175deg, rgba(0, 0, 0, 0.4) 75%, black);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 main article:nth-of-type(1) div {
   background: linear-gradient(
-    165deg,
+    170deg,
     rgba(255, 0, 0, 0.5) 25%,
     rgba(0, 0, 0, 0.5),
     black
   );
-  height: 100%;
 }
 
 main .g1-3 {
@@ -263,7 +286,7 @@ main .g2-3 {
   }
 
   main article:nth-of-type(1) div {
-    background: none;
+    background: linear-gradient(175deg, rgba(0, 0, 0, 0.4) 75%, black);
   }
 }
 
@@ -395,7 +418,7 @@ footer ul:nth-of-type(2) li {
 }
 
 @media only screen and (max-width: 1020px) {
-  .g1-3 {
+  #articles .g1-3 {
     width: 50%;
   }
 }
