@@ -178,12 +178,13 @@ footer {
 }
 /* ------------- Fonts ------------------ */
 h1 {
-  top: 50%;
+  top: 60%;
   position: absolute;
   font-size: 3em;
   font-weight: bold;
   color: white;
   z-index: 98;
+  padding: 0 20px;
 }
 
 h3 {
@@ -205,6 +206,20 @@ h5 {
   color: #f42;
   font-weight: bold;
   padding: 40px 0 20px 0;
+}
+
+.caps-title {
+  font-size: 1em;
+  color: white;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+.article-h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0 20px;
+  color: white;
 }
 
 /* ----------- Header ------------- */
@@ -265,6 +280,22 @@ main article {
   position: relative;
   border-bottom: white 8px solid;
   border-right: white 8px solid;
+}
+
+main h3 {
+  font-size: 0.9em;
+  color: white;
+  font-weight: normal;
+  position: relative;
+  float: right;
+  z-index: 98;
+  padding-right: 20px;
+}
+
+main h2 {
+  position: relative;
+  top: 60%;
+  z-index: 98;
 }
 
 main article:nth-of-type(1) {
@@ -337,6 +368,14 @@ main .g2-3 {
     background: none;
     height: 30%;
   }
+
+  main h3 {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -344,6 +383,9 @@ main .g2-3 {
   main .g2-3 {
     width: 100%;
     height: 220px;
+  }
+  h1 {
+    font-size: 1.2em;
   }
 }
 
