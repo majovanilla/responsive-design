@@ -384,6 +384,7 @@ main .g2-3 {
     width: 100%;
     height: 220px;
   }
+
   h1 {
     font-size: 1.2em;
   }
@@ -405,6 +406,37 @@ main .g2-3 {
 #latest-news article a img {
   width: 100%;
   height: 50%;
+}
+
+@media only screen and (max-width: 1020px) {
+  h3 {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #latest-news article {
+    height: 75px;
+    position: relative;
+  }
+
+  #latest-news article a img {
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  #latest-news a {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  h5 {
+    padding-left: 20%;
+    position: absolute;
+    top: 60%;
+  }
 }
 
 /* ----------- Apple ---------- */
