@@ -479,6 +479,32 @@ main .g2-3 {
   margin-bottom: 20px;
 }
 
+.funding-large-div {
+  heigth: 30px;
+}
+
+.funding-title {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+#latest-funding ul {
+  display: inline-flex;
+  height: 20px;
+   margin-top: 45px;
+}
+
+#latest-funding ul li {
+  border-right: red 1px solid;
+  padding: 0 10px;
+  color: #f42;
+}
+
+#latest-funding ul li:last-of-type {
+  border-right: none;
+}
+
 @media only screen and (max-width: 1020px) {
   #latest-funding article:last-child {
     display: none;
@@ -617,4 +643,5 @@ footer ul:nth-of-type(2) li {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
