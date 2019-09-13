@@ -478,10 +478,12 @@ main .g2-3 {
   height: 275px;
   float: left;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .funding-large-div {
-  heigth: 30px;
+  height: 105px;
+  background: linear-gradient(rgba(255,68,34) 40%, rgba(255,68,34,0.2) 40%);
 }
 
 .funding-title {
@@ -507,8 +509,52 @@ main .g2-3 {
 }
 
 #latest-funding img {
-  height: 50px;
+  height: 60px;
+  margin: 10px;
 }
+
+.funding-bottom-div {
+  top: 0;
+  position: absolute;
+}
+
+.funding-icons1 {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) no-repeat 0 10%;
+}
+
+.funding-icons1{
+  padding-bottom: 20px;
+}
+
+
+.funding-icons1 p,
+.funding-icons2 p {
+  padding-left: 60px;
+}
+
+#latest-funding h2,
+#latest-funding h3, 
+#latest-funding h4 {
+  padding-left: 90px;
+}
+
+#latest-funding h2 {
+  padding-top: 20px;
+}
+
+#latest-funding h3 {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+#latest-funding h4 { 
+}
+
+
+
+
+
+
 
 @media only screen and (max-width: 1020px) {
   #latest-funding article:last-child {
