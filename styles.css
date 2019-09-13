@@ -355,12 +355,19 @@ main article:nth-of-type(3) {
   background-size: cover;
 }
 
-main article div,
-#articles article div {
-  background: linear-gradient(175deg, rgba(0, 0, 0, 0.4) 75%, black);
+.article-gradient {
+  background: linear-gradient(
+    175deg,
+    transparent,
+    rgba(0, 0, 0, 0.4) 75%,
+    black
+  );
+  position: absolute;
+}
+
+main article div {
   height: 100%;
   width: 100%;
-  position: absolute;
 }
 
 main article:nth-of-type(1) div {
@@ -483,7 +490,10 @@ main .g2-3 {
 
 .funding-large-div {
   height: 105px;
-  background: linear-gradient(rgba(255,68,34) 40%, rgba(255,68,34,0.2) 40%);
+  background: linear-gradient(
+    rgba(255, 68, 34) 40%,
+    rgba(255, 68, 34, 0.2) 40%
+  );
 }
 
 .funding-title {
@@ -519,13 +529,13 @@ main .g2-3 {
 }
 
 .funding-icons1 {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) no-repeat 0 10%;
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
+    no-repeat 0 10%;
 }
 
-.funding-icons1{
+.funding-icons1 {
   padding-bottom: 20px;
 }
-
 
 .funding-icons1 p,
 .funding-icons2 p {
@@ -533,7 +543,7 @@ main .g2-3 {
 }
 
 #latest-funding h2,
-#latest-funding h3, 
+#latest-funding h3,
 #latest-funding h4 {
   padding-left: 90px;
 }
@@ -547,14 +557,8 @@ main .g2-3 {
   padding-bottom: 0;
 }
 
-#latest-funding h4 { 
+#latest-funding h4 {
 }
-
-
-
-
-
-
 
 @media only screen and (max-width: 1020px) {
   #latest-funding article:last-child {
@@ -575,16 +579,41 @@ main .g2-3 {
   float: left;
   margin-bottom: 20px;
   position: relative;
+  z-index: 90;
 }
 
-.articles-gradient {
+#articles div:nth-of-type(1) {
   height: 43.5%;
+  width: 100%;
+  z-index: -1;
+  top: 13.5%;
 }
 
-#latest-articles {
-  background: none;
-  width: 100%;
-  height: 20%;
+#articles .caps-title:nth-of-type(2) {
+  margin-top: 50%;
+  font-size: 0.8em;
+}
+
+#articles .article-h2 {
+  font-size: 1.2em;
+}
+
+.latest-articles {
+  margin-top: 12.6%;
+  height: 95px;
+  width: 75%;
+  background: rgba(255, 0, 0, 0.2);
+  color: #f42;
+  float: left;
+}
+
+.latest-img {
+  width: 25%;
+  margin-top: 12.6%;
+  float: right;
+  height: 95px;
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Microsoft-To-Do.jpg)
+    50%/200% no-repeat;
 }
 
 #articles article:nth-of-type(1) {
@@ -709,6 +738,14 @@ footer ul:nth-of-type(2) li {
   width: 33.33%;
 }
 
+.g2-3 {
+  width: 66.66%;
+}
+
+.g1-4 {
+  width: 25%;
+}
+
 @media only screen and (max-width: 1020px) {
   #articles .g1-3 {
     width: 50%;
@@ -719,14 +756,6 @@ footer ul:nth-of-type(2) li {
   .g1-3 {
     width: 100%;
   }
-}
-
-.g2-3 {
-  width: 66.66%;
-}
-
-.g1-4 {
-  width: 25%;
 }
 
 @media only screen and (max-width: 1020px) {
