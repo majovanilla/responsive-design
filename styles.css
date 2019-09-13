@@ -387,44 +387,6 @@ main .g2-3 {
   height: 540px;
 }
 
-@media only screen and (max-width: 1020px) {
-  main .g1-3 {
-    height: 225px;
-  }
-
-  main .g2-3 {
-    height: 450px;
-  }
-
-  main article:nth-of-type(1) div {
-    background: linear-gradient(175deg, rgba(0, 0, 0, 0.4) 75%, black);
-  }
-
-  main article:nth-of-type(1) header {
-    background: none;
-    height: 30%;
-  }
-
-  main h3 {
-    display: none;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  main .g1-3,
-  main .g2-3 {
-    width: 100%;
-    height: 220px;
-  }
-  h1 {
-    font-size: 1.2em;
-  }
-}
-
 /* ----------- Latest News ---------- */
 
 #latest-news {
@@ -444,40 +406,6 @@ main .g2-3 {
 #apple article a img {
   width: 100%;
   height: 50%;
-}
-
-@media only screen and (max-width: 1020px) {
-  h3 {
-    font-size: 0.85em;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  #latest-news article,
-  #apple article {
-    height: 75px;
-    position: relative;
-  }
-
-  #latest-news article a img,
-  #apple article a img {
-    width: 74px;
-    height: 74px;
-    object-fit: cover;
-    margin-right: 10px;
-  }
-
-  #latest-news a,
-  #apple a {
-    display: inline-flex;
-    width: 100%;
-  }
-
-  h5 {
-    padding-left: 84px;
-    position: absolute;
-    top: 50%;
-  }
 }
 
 /* ----------- Latest Funding ----------------*/
@@ -560,19 +488,6 @@ main .g2-3 {
 #latest-funding h4 {
 }
 
-@media only screen and (max-width: 1020px) {
-  #latest-funding article:last-child {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  #latest-funding article {
-    height: 235px;
-    margin-bottom: 10px;
-  }
-}
-
 /* ----------- Articles ----------------*/
 #articles article {
   height: 650px;
@@ -621,12 +536,6 @@ main .g2-3 {
     90% 25% no-repeat;
 }
 
-@media only screen and (max-width: 760px) {
-  #articles article {
-    height: 235px;
-    margin-bottom: 10px;
-  }
-}
 /* ----------- Latest Deals ----------------*/
 
 #latest-deals article {
@@ -657,35 +566,6 @@ main .g2-3 {
   left: 8px;
   position: relative;
   top: 14px;
-}
-
-@media only screen and (max-width: 760px) {
-  #latest-deals article {
-    height: 75px;
-    position: relative;
-  }
-
-  #latest-deals article a img {
-    width: 74px;
-    height: 74px;
-    object-fit: cover;
-    margin-right: 10px;
-  }
-
-  #latest-deals a {
-    display: inline-flex;
-    width: 100%;
-  }
-  /*
-  h5 {
-    padding-left: 84px;
-    position: absolute;
-    top: 30%;
-  }*/
-
-  .price-tag {
-    display: none;
-  }
 }
 
 /* ----------- Footer ----------------*/
@@ -746,30 +626,6 @@ footer ul:nth-of-type(2) li {
   width: 25%;
 }
 
-@media only screen and (max-width: 1020px) {
-  #articles .g1-3 {
-    width: 50%;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  .g1-3 {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 1020px) {
-  .g1-4 {
-    width: 33.33%;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  .g1-4 {
-    width: 100%;
-  }
-}
-
 /* ----------- More Generals ------------------ */
 
 .f-left {
@@ -780,3 +636,191 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+
+@media only screen and (max-width: 1020px) {
+
+  /* ------------- Fonts 1020PX------------------ */
+  
+  /* ----------- Header 1020PX------------- */
+  
+    header div {
+      background: url(img/tnw.png) no-repeat;
+      background-size: cover;
+    }
+  
+    header section:nth-of-type(1),
+    header section:nth-of-type(2) {
+      padding-left: 115px;
+    }
+    header section:nth-of-type(3) {
+      text-align: center;
+    }
+  
+    /* ---------- Main 1020PX--------------- */
+  
+    main .g1-3 {
+      height: 225px;
+    }
+  
+    main .g2-3 {
+      height: 450px;
+    }
+  
+    main article:nth-of-type(1) div {
+      background: linear-gradient(175deg, rgba(0, 0, 0, 0.4) 75%, black);
+    }
+  
+    main article:nth-of-type(1) header {
+      background: none;
+      height: 30%;
+    }
+  
+    main h3 {
+      display: none;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+  /* ----------- Latest News 1020PX---------- */
+  
+    h3 {
+        font-size: 0.85em;
+      }
+  
+    /* ----------- Latest Funding 1020PX----------------*/
+  
+    #latest-funding article:last-child {
+      display: none;
+    }
+  
+    /* ----------- Articles 1020PX----------------*/
+  
+    /* ----------- Latest Deals 1020PX----------------*/
+  
+    /* ----------- Footer 1020PX----------------*/
+  
+    /* -------------- GRID STRUCTURE 1020PX--------------- */
+  
+    #articles .g1-3 {
+      width: 50%;
+    }
+  
+    .g1-4 {
+      width: 33.33%;
+    }
+  }
+  
+  @media only screen and (max-width: 760px) {
+  
+  /* ---------- Header 760PX--------------- */
+    header div {
+      height: 50px;
+      background-position-y: 45%;
+    }
+  
+    header section:nth-of-type(1) {
+      display: none;
+    }
+    header section:nth-of-type(2) ul {
+      display: none;
+    }
+  
+  /* ---------- Main 760PX--------------- */
+  
+    main .g1-3,
+    main .g2-3 {
+      width: 100%;
+      height: 220px;
+    }
+    h1 {
+      font-size: 1.2em;
+    }
+    
+  /* ----------- Latest News 760PX---------- */
+  
+      #latest-news article,
+      #apple article {
+      height: 75px;
+      position: relative;
+      }
+  
+      #latest-news article a img,
+      #apple article a img {
+      width: 74px;
+      height: 74px;
+      object-fit: cover;
+      margin-right: 10px;
+      }
+  
+      #latest-news a,
+      #apple a {
+      display: inline-flex;
+      width: 100%;
+      }
+  
+      h5 {
+      padding-left: 84px;
+      position: absolute;
+      top: 50%;
+      }
+  
+  /* ----------- Latest Funding 760PX----------------*/
+  
+  #latest-funding article {
+      height: 235px;
+      margin-bottom: 10px;
+    }
+  
+    /* ----------- Articles 760PX----------------*/
+    #articles article {
+      height: 235px;
+      margin-bottom: 10px;
+    }
+  
+    /* ----------- Latest Deals 760PX----------------*/
+  
+    #latest-deals article {
+      height: 75px;
+      position: relative;
+    }
+  
+    #latest-deals article a img {
+      width: 74px;
+      height: 74px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+  
+    #latest-deals a {
+      display: inline-flex;
+      width: 100%;
+    }
+    /*
+    h5 {
+      padding-left: 84px;
+      position: absolute;
+      top: 30%;
+    }*/
+  
+    .price-tag {
+      display: none;
+    }
+  
+    /* ----------- Footer 760PX----------------*/
+  
+    /* -------------- GRID STRUCTURE 760PX--------------- */
+  
+    .g1-3 {
+      width: 100%;
+    }
+  
+    .g1-4 {
+      width: 100%;
+    }
+  
+    /* ----------- More Generals 760PX------------------ */
+  }
+  
