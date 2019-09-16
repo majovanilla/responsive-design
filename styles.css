@@ -416,7 +416,7 @@ main .g2-3 {
   position: relative;
   padding-right: 15px;
   padding: 10px;
-  background: #fffaf8;
+  background: rgb(255, 250, 248);
   z-index: 90;
 }
 
@@ -425,7 +425,7 @@ main .g2-3 {
   width: 100%;
   background: linear-gradient(
     rgba(255, 68, 34) 40%,
-    rgba(255, 68, 34, 0.2) 40%
+    rgba(255,68,34,.08) 40%
   );
   position: absolute;
   top: 0;
@@ -451,8 +451,22 @@ main .g2-3 {
   border-right: none;
 }
 
-#latest-funding img {
+.funding-article-img {
   height: 60px;
+}
+
+.funding-small-icons-div {
+  padding-left: 10px;
+  margin-top: 35px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.funding-small-icons-div:nth-of-type(2) {
+ margin-top: 0;
+ border-bottom: 1px solid rgba(255, 68, 34, 0.25);
+ margin-bottom: 10px;
+ padding-bottom: 10px;
 }
 
 .funding-title,
@@ -465,22 +479,11 @@ main .g2-3 {
   padding-left: 0;
 }
 
-.funding-icons1 {
-  width: 100%;
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
-    no-repeat 0 10%;
-  padding-top: 35px;
-}
-
+.funding-icons1,
 .funding-icons2 {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
-    no-repeat 0 10%;
-  padding-bottom: 20px;
-}
-
-.funding-icons1 p,
-.funding-icons2 p {
-  padding-left: 60px;
+  width: 15px;
+  transform: rotateY(180deg);
+  margin-right: 10px;
 }
 
 /* ----------- Articles ----------------*/
