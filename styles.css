@@ -423,9 +423,12 @@ main .g2-3 {
 .funding-large-div {
   height: 100px;
   width: 100%;
-  background: linear-gradient( rgba(255, 68, 34) 40%, rgba(255, 68, 34, 0.2) 40% );
+  background: linear-gradient(
+    rgba(255, 68, 34) 40%,
+    rgba(255, 68, 34, 0.2) 40%
+  );
   position: absolute;
-  top: 0;    
+  top: 0;
   left: 0;
   z-index: -1;
   padding-left: 90px;
@@ -496,31 +499,54 @@ main .g2-3 {
   top: 13.5%;
 }
 
-#articles .caps-title:nth-of-type(2) {
-  margin-top: 50%;
-  font-size: 0.8em;
+#articles .caps-title {
+  font-size: 0.812em;
 }
 
-#articles .article-h2 {
+#articles .caps-title:nth-of-type(2) {
+  margin-top: 50%;
+}
+
+#articles .article-h2:nth-of-type(3) {
   font-size: 1.2em;
 }
 
 .latest-articles {
-  margin-top: 12.6%;
+  margin-top: 12.8%;
   height: 95px;
   width: 75%;
-  background: rgba(255, 0, 0, 0.2);
-  color: #f42;
+  background: rgba(255, 68, 34, 0.06);
   float: left;
+}
+
+#articles .latest-articles .caps-title {
+  color: #f42;
+  margin-top: 10px;
+}
+
+#articles .latest-articles .article-h2 {
+  font-size: 1em;
+  color: #f42;
 }
 
 .latest-img {
   width: 25%;
-  margin-top: 12.6%;
+  margin-top: 12.8%;
   float: right;
   height: 95px;
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Microsoft-To-Do.jpg)
     50%/200% no-repeat;
+}
+
+.bullet {
+  color: #f42;
+  font-size: 0.812em;
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+#articles ul li {
+  display: inline-flex;
 }
 
 #articles article:nth-of-type(1) {
@@ -629,190 +655,186 @@ a {
   color: inherit;
 }
 
-
 @media only screen and (max-width: 1020px) {
-
   /* ------------- Fonts 1020PX------------------ */
-  
+
   /* ----------- Header 1020PX------------- */
-  
-    header div {
-      background: url(img/tnw.png) no-repeat;
-      background-size: cover;
-    }
-  
-    header section:nth-of-type(1),
-    header section:nth-of-type(2) {
-      padding-left: 115px;
-    }
-    header section:nth-of-type(3) {
-      text-align: center;
-    }
-  
-    /* ---------- Main 1020PX--------------- */
-  
-    main .g1-3 {
-      height: 225px;
-    }
-  
-    main .g2-3 {
-      height: 450px;
-    }
-  
-    main article:nth-of-type(1) div {
-      background: linear-gradient(175deg, rgba(0, 0, 0, 0.4) 75%, black);
-    }
-  
-    main article:nth-of-type(1) header {
-      background: none;
-      height: 30%;
-    }
-  
-    main h3 {
-      display: none;
-    }
-  
-    h1 {
-      font-size: 2em;
-    }
-  
-  /* ----------- Latest News 1020PX---------- */
-  
-    h3 {
-        font-size: 0.85em;
-      }
-  
-    /* ----------- Latest Funding 1020PX----------------*/
-  
-    #latest-funding article:last-child {
-      display: none;
-    }
-  
-    /* ----------- Articles 1020PX----------------*/
-  
-    /* ----------- Latest Deals 1020PX----------------*/
-  
-    /* ----------- Footer 1020PX----------------*/
-  
-    /* -------------- GRID STRUCTURE 1020PX--------------- */
-  
-    #articles .g1-3 {
-      width: 50%;
-    }
-  
-    .g1-4 {
-      width: 33.33%;
-    }
+
+  header div {
+    background: url(img/tnw.png) no-repeat;
+    background-size: cover;
   }
-  
-  @media only screen and (max-width: 760px) {
-  
+
+  header section:nth-of-type(1),
+  header section:nth-of-type(2) {
+    padding-left: 115px;
+  }
+  header section:nth-of-type(3) {
+    text-align: center;
+  }
+
+  /* ---------- Main 1020PX--------------- */
+
+  main .g1-3 {
+    height: 225px;
+  }
+
+  main .g2-3 {
+    height: 450px;
+  }
+
+  main article:nth-of-type(1) div {
+    background: linear-gradient(175deg, rgba(0, 0, 0, 0.4) 75%, black);
+  }
+
+  main article:nth-of-type(1) header {
+    background: none;
+    height: 30%;
+  }
+
+  main h3 {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  /* ----------- Latest News 1020PX---------- */
+
+  h3 {
+    font-size: 0.85em;
+  }
+
+  /* ----------- Latest Funding 1020PX----------------*/
+
+  #latest-funding article:last-child {
+    display: none;
+  }
+
+  /* ----------- Articles 1020PX----------------*/
+
+  /* ----------- Latest Deals 1020PX----------------*/
+
+  /* ----------- Footer 1020PX----------------*/
+
+  /* -------------- GRID STRUCTURE 1020PX--------------- */
+
+  #articles .g1-3 {
+    width: 50%;
+  }
+
+  .g1-4 {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
   /* ---------- Header 760PX--------------- */
-    header div {
-      height: 50px;
-      background-position-y: 45%;
-    }
-  
-    header section:nth-of-type(1) {
-      display: none;
-    }
-    header section:nth-of-type(2) ul {
-      display: none;
-    }
-  
+  header div {
+    height: 50px;
+    background-position-y: 45%;
+  }
+
+  header section:nth-of-type(1) {
+    display: none;
+  }
+  header section:nth-of-type(2) ul {
+    display: none;
+  }
+
   /* ---------- Main 760PX--------------- */
-  
-    main .g1-3,
-    main .g2-3 {
-      width: 100%;
-      height: 220px;
-    }
-    h1 {
-      font-size: 1.2em;
-    }
-    
+
+  main .g1-3,
+  main .g2-3 {
+    width: 100%;
+    height: 220px;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+
   /* ----------- Latest News 760PX---------- */
-  
-      #latest-news article,
-      #apple article {
-      height: 75px;
-      position: relative;
-      }
-  
-      #latest-news article a img,
-      #apple article a img {
-      width: 74px;
-      height: 74px;
-      object-fit: cover;
-      margin-right: 10px;
-      }
-  
-      #latest-news a,
-      #apple a {
-      display: inline-flex;
-      width: 100%;
-      }
-  
-      h5 {
-      padding-left: 84px;
-      position: absolute;
-      top: 50%;
-      }
-  
+
+  #latest-news article,
+  #apple article {
+    height: 75px;
+    position: relative;
+  }
+
+  #latest-news article a img,
+  #apple article a img {
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  #latest-news a,
+  #apple a {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  h5 {
+    padding-left: 84px;
+    position: absolute;
+    top: 50%;
+  }
+
   /* ----------- Latest Funding 760PX----------------*/
-  
+
   #latest-funding article {
-      height: 235px;
-      margin-bottom: 10px;
-    }
-  
-    /* ----------- Articles 760PX----------------*/
-    #articles article {
-      height: 235px;
-      margin-bottom: 10px;
-    }
-  
-    /* ----------- Latest Deals 760PX----------------*/
-  
-    #latest-deals article {
-      height: 75px;
-      position: relative;
-    }
-  
-    #latest-deals article a img {
-      width: 74px;
-      height: 74px;
-      object-fit: cover;
-      margin-right: 10px;
-    }
-  
-    #latest-deals a {
-      display: inline-flex;
-      width: 100%;
-    }
-    /*
+    height: 235px;
+    margin-bottom: 10px;
+  }
+
+  /* ----------- Articles 760PX----------------*/
+  #articles article {
+    height: 235px;
+    margin-bottom: 10px;
+  }
+
+  /* ----------- Latest Deals 760PX----------------*/
+
+  #latest-deals article {
+    height: 75px;
+    position: relative;
+  }
+
+  #latest-deals article a img {
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  #latest-deals a {
+    display: inline-flex;
+    width: 100%;
+  }
+  /*
     h5 {
       padding-left: 84px;
       position: absolute;
       top: 30%;
     }*/
-  
-    .price-tag {
-      display: none;
-    }
-  
-    /* ----------- Footer 760PX----------------*/
-  
-    /* -------------- GRID STRUCTURE 760PX--------------- */
-  
-    .g1-3 {
-      width: 100%;
-    }
-  
-    .g1-4 {
-      width: 100%;
-    }
-  
-    /* ----------- More Generals 760PX------------------ */
+
+  .price-tag {
+    display: none;
   }
-  
+
+  /* ----------- Footer 760PX----------------*/
+
+  /* -------------- GRID STRUCTURE 760PX--------------- */
+
+  .g1-3 {
+    width: 100%;
+  }
+
+  .g1-4 {
+    width: 100%;
+  }
+
+  /* ----------- More Generals 760PX------------------ */
+}
