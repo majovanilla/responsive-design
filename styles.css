@@ -411,14 +411,12 @@ main .g2-3 {
 
 /* ----------- Latest Funding ----------------*/
 #latest-funding article {
-  height: 275px;
   float: left;
   margin-bottom: 20px;
   position: relative;
-  padding-right: 15px;
-  padding: 10px;
   background: rgb(255, 250, 248);
   z-index: 90;
+  padding-bottom: 10px;
 }
 
 .funding-large-div {
@@ -454,6 +452,25 @@ main .g2-3 {
 
 .funding-article-img {
   height: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#latest-funding .caps-title {
+  padding-left: 0;
+  color: rgb(85, 85, 85);
+  font-size: 0.8em;
+}
+
+#latest-funding p {
+  color: rgb(85, 85, 85);
+  padding: 0 10px;
+  line-height: 1.2;
+  font-size: 0.8em;
+}
+
+#latest-funding span {
+  color: #aaa;
 }
 
 .funding-small-icons-div {
@@ -464,7 +481,7 @@ main .g2-3 {
 }
 
 .funding-small-icons-div:nth-of-type(2) {
-  margin-top: 0;
+  margin-top: 10px;
   border-bottom: 1px solid rgba(255, 68, 34, 0.25);
   margin-bottom: 10px;
   padding-bottom: 10px;
@@ -474,10 +491,14 @@ main .g2-3 {
 #latest-funding h3 {
   padding-top: 15px;
   padding-bottom: 0;
+  font-size: 18px;
 }
 
-#latest-funding .caps-title {
-  padding-left: 0;
+.funding-title {
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .funding-icons1,
@@ -801,6 +822,14 @@ a {
   #latest-funding article {
     height: 235px;
     margin-bottom: 10px;
+  }
+
+  #latest-funding ul {
+    display: contents;
+  }
+
+  #latest-funding ul li {
+    padding: 10px 0;
   }
 
   /* ----------- Articles 760PX----------------*/
