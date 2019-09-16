@@ -359,7 +359,8 @@ main article:nth-of-type(3) {
   background: linear-gradient(
     175deg,
     transparent,
-    rgba(0, 0, 0, 0.4) 75%,
+    rgba(0, 0, 0, 0.4) 65%,
+    rgba(0, 0, 0, 0.9),
     black
   );
   position: absolute;
@@ -425,7 +426,7 @@ main .g2-3 {
   width: 100%;
   background: linear-gradient(
     rgba(255, 68, 34) 40%,
-    rgba(255,68,34,.08) 40%
+    rgba(255, 68, 34, 0.08) 40%
   );
   position: absolute;
   top: 0;
@@ -463,10 +464,10 @@ main .g2-3 {
 }
 
 .funding-small-icons-div:nth-of-type(2) {
- margin-top: 0;
- border-bottom: 1px solid rgba(255, 68, 34, 0.25);
- margin-bottom: 10px;
- padding-bottom: 10px;
+  margin-top: 0;
+  border-bottom: 1px solid rgba(255, 68, 34, 0.25);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .funding-title,
@@ -488,7 +489,6 @@ main .g2-3 {
 
 /* ----------- Articles ----------------*/
 #articles article {
-  height: 650px;
   float: left;
   margin-bottom: 20px;
   position: relative;
@@ -507,7 +507,7 @@ main .g2-3 {
 }
 
 #articles .caps-title:nth-of-type(2) {
-  margin-top: 50%;
+  margin-top: 70%;
 }
 
 #articles .article-h2:nth-of-type(3) {
@@ -543,13 +543,24 @@ main .g2-3 {
 
 .bullet {
   color: #f42;
-  font-size: 0.812em;
+  font-size: 2em;
+  line-height: 0;
   font-weight: 800;
   margin-right: 10px;
 }
 
 #articles ul li {
   display: inline-flex;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+#articles li a {
+  color: #555;
+  font-size: 0.8em;
+  line-height: 1.5;
 }
 
 #articles article:nth-of-type(1) {
