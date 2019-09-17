@@ -271,35 +271,9 @@ header section:nth-of-type(3) {
   color: black;
   padding-top: 8px;
   font-size: 0.8em;
-}
-
-@media only screen and (max-width: 1020px) {
-  header div {
-    background: url(img/tnw.png) no-repeat;
-    background-size: cover;
-  }
-
-  header section:nth-of-type(1),
-  header section:nth-of-type(2) {
-    padding-left: 115px;
-  }
-  header section:nth-of-type(3) {
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  header div {
-    height: 50px;
-    background-position-y: 45%;
-  }
-
-  header section:nth-of-type(1) {
-    display: none;
-  }
-  header section:nth-of-type(2) ul {
-    display: none;
-  }
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* ---------- Main --------------- */
@@ -872,6 +846,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   /* ---------- Header 760PX--------------- */
+
   header div {
     height: 50px;
     background-position-y: 45%;
