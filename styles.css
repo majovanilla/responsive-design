@@ -516,8 +516,12 @@ main .g2-3 {
   margin-bottom: 20px;
   position: relative;
   z-index: 90;
-  height: 235px;
+  height: 750px;
   border-right: solid 15px white;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/google-docs-word-count-368x276.jpg);
+  background-position: 100% 88px;
+  background-size: 100% 320px;
+  background-repeat: no-repeat;
 }
 
 #articles div:nth-of-type(1) {
@@ -553,12 +557,42 @@ main .g2-3 {
   color: #f42;
 }
 
-.latest-img {
+#articles article .latest-img {
   width: 25%;
   float: right;
   height: 95px;
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Microsoft-To-Do.jpg)
-    50%/200% no-repeat;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Microsoft-To-Do.jpg);
+  background-position: 50%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+}
+
+#articles article:nth-of-type(2) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/OnePlus-tv-hed.jpg);
+}
+
+#articles article:nth-of-type(3) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/app-store-apple-hed.png);
+}
+
+#articles article:nth-of-type(4) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/chineseverticalB1200.png);
+}
+
+#articles article:nth-of-type(5) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay.jpg);
+}
+
+#articles article:nth-of-type(6) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Untitled-design-23.jpg);
+}
+
+#articles article:nth-of-type(7) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Orion-Doom-Bethesda-hed.jpg);
+}
+
+#articles article:nth-of-type(8) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Ring-Fit-Adventure.jpg);
 }
 
 .bullet {
@@ -583,9 +617,32 @@ main .g2-3 {
   line-height: 1.5;
 }
 
-#articles article:nth-of-type(1) {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/google-docs-word-count-368x276.jpg)
-    100% 88px/100% 320px no-repeat;
+#articles article:nth-of-type(2) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Fitbit_Versa_2_Special_Edition_Together_V3_Crop_1-368x276.jpg);
+}
+
+#articles article:nth-of-type(3) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/simjacker-attack-hed-368x276.jpg);
+}
+
+#articles article:nth-of-type(4) {
+  background-image: url(https://i.ytimg.com/vi/Z1jgaEO9aRs/hqdefault.jpg);
+}
+
+#articles article:nth-of-type(5) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Learning-AI-Programming-368x276.jpg);
+}
+
+#articles article:nth-of-type(6) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/quantum_mess-368x276.jpg);
+}
+
+#articles article:nth-of-type(7) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Pam-Angela-The-Office-368x276.jpg);
+}
+
+#articles article:nth-of-type(8) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/pong-368x276.jpg);
 }
 
 /* ----------- Latest Deals ----------------*/
@@ -670,13 +727,27 @@ footer ul:nth-of-type(2) li {
   position: absolute;
 }
 
-#social ul li a:nth-of-type(1) { background: url(img/FB.png) 45%/25px no-repeat;}
-#social ul li a:nth-of-type(2) { background: url(img/FB.png) 45%/25px no-repeat;}
-#social ul li a:nth-of-type(3) { background: url(img/FB.png) 45%/25px no-repeat;}
-#social ul li a:nth-of-type(4) { background: url(img/FB.png) 45%/25px no-repeat;}
-#social ul li a:nth-of-type(5) { background: url(img/FB.png) 45%/25px no-repeat;}
-#social ul li a:nth-of-type(6) { background: url(img/FB.png) 45%/25px no-repeat;}
-#social ul li a:nth-of-type(7) { background: url(img/FB.png) 45%/25px no-repeat;}
+#social ul li a:nth-of-type(1) {
+  background: url(img/FB.png) 45%/25px no-repeat;
+}
+#social ul li a:nth-of-type(2) {
+  background: url(img/FB.png) 45%/25px no-repeat;
+}
+#social ul li a:nth-of-type(3) {
+  background: url(img/FB.png) 45%/25px no-repeat;
+}
+#social ul li a:nth-of-type(4) {
+  background: url(img/FB.png) 45%/25px no-repeat;
+}
+#social ul li a:nth-of-type(5) {
+  background: url(img/FB.png) 45%/25px no-repeat;
+}
+#social ul li a:nth-of-type(6) {
+  background: url(img/FB.png) 45%/25px no-repeat;
+}
+#social ul li a:nth-of-type(7) {
+  background: url(img/FB.png) 45%/25px no-repeat;
+}
 
 /* -------------- GRID STRUCTURE --------------- */
 
@@ -842,7 +913,7 @@ a {
     height: 200px;
     margin-bottom: 25px;
     border: none;
- } 
+  }
 
   #latest-funding ul {
     display: contents;
