@@ -135,14 +135,14 @@ table {
 
 /* -------------- GENERAL STRUCTURE --------------- */
 
-*,
+/**,
 header,
 section,
 ul,
 li,
 article {
   border: red solid 1px;
-}
+}*/
 
 body {
   width: 100%;
@@ -694,59 +694,74 @@ footer ul {
   justify-content: center;
 }
 
-footer ul:nth-child(1) li {
+#social ul:nth-child(1) li {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: #555;
-  margin: 5px;
+  background-color: #333;
+  margin: 8px;
 }
 
-footer ul:nth-of-type(2) {
+#social ul:nth-of-type(2),
+#copyright p {
   margin: auto;
   color: lightgray;
+  margin-top: 20px;
+  font-size: .7em;
 }
 
-footer ul:nth-of-type(2) li {
+#copyright p { 
+  margin-top: 0;
+  font-size: .9em;
+}
+
+#social ul:nth-of-type(2) li {
   margin: 5px;
 }
 
 #copyright {
   color: white;
   text-align: center;
+  padding: 30px;
+  font-size: .9em;
 }
 
-#copyright a {
-  width: 10%;
+#copyright img:nth-of-type(1) {
+  width: 8%;
   height: 10px;
+}
+
+#copyright span {
+  color: red;
 }
 
 #social ul li a {
   width: 40px;
   height: 40px;
   position: absolute;
+  background-image: url(img/FB.png);
+  background-position: 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
 }
 
-#social ul li a:nth-of-type(1) {
-  background: url(img/FB.png) 45%/25px no-repeat;
+#social ul li:nth-of-type(2) a {
+  background-image: url(img/twitter.png);
 }
-#social ul li a:nth-of-type(2) {
-  background: url(img/FB.png) 45%/25px no-repeat;
+#social ul li:nth-of-type(3) a {
+  background-image: url(img/youtube.png);
 }
-#social ul li a:nth-of-type(3) {
-  background: url(img/FB.png) 45%/25px no-repeat;
+#social ul li:nth-of-type(4) a {
+  background-image: url(img/ig.png);
 }
-#social ul li a:nth-of-type(4) {
-  background: url(img/FB.png) 45%/25px no-repeat;
+#social ul li:nth-of-type(5) a {
+  background-image: url(img/pin.png);
 }
-#social ul li a:nth-of-type(5) {
-  background: url(img/FB.png) 45%/25px no-repeat;
+#social ul li:nth-of-type(6) a {
+  background-image: url(img/mail.png);
 }
-#social ul li a:nth-of-type(6) {
-  background: url(img/FB.png) 45%/25px no-repeat;
-}
-#social ul li a:nth-of-type(7) {
-  background: url(img/FB.png) 45%/25px no-repeat;
+#social ul li:nth-of-type(7) a {
+  background-image: url(img/rss.png);
 }
 
 /* -------------- GRID STRUCTURE --------------- */
