@@ -90,6 +90,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Noto Sans TC', sans-serif;
   box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
@@ -128,11 +129,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-* {
-  box-sizing: border-box;
-}
-
 /* -------------- GENERAL STRUCTURE --------------- */
 
 /**,
@@ -213,6 +209,7 @@ h5 {
   color: white;
   padding-bottom: 5px;
   padding-left: 20px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .article-h2 {
@@ -236,6 +233,9 @@ header section {
   width: 100%;
   color: lightgray;
   padding-left: 15px;
+  font-size: .8em;
+  padding-top: 3px;
+  color: hsla(0,0%,100%,.6);
 }
 
 header ul {
@@ -254,7 +254,10 @@ header ul li {
 header section:nth-of-type(2) {
   background-color: white;
   height: 50px;
-  padding-top: 10px;
+  padding-top: 15px;
+  color: #aaa;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
 }
 
 header section ul li a {
@@ -468,6 +471,7 @@ main .g2-3 {
   padding-top: 15px;
   padding-bottom: 0;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .funding-title {
@@ -673,8 +677,13 @@ footer ul {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  border: 2px solid #333;
   background-color: #333;
   margin: 8px;
+}
+
+#social ul:nth-child(1) li:hover {
+  background-color: black;
 }
 
 #social ul:nth-of-type(2),
@@ -715,7 +724,7 @@ footer ul {
   height: 40px;
   position: absolute;
   background-image: url(img/FB.png);
-  background-position: 50%;
+  background-position: 42% 45%;
   background-size: 20px;
   background-repeat: no-repeat;
 }
@@ -737,6 +746,7 @@ footer ul {
 }
 #social ul li:nth-of-type(7) a {
   background-image: url(img/rss.png);
+  background-size: 15px;
 }
 
 /* -------------- GRID STRUCTURE --------------- */
