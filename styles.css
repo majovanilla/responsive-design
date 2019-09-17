@@ -530,6 +530,7 @@ main .g2-3 {
   z-index: -1;
   padding-top: 60%;
   position: relative;
+  margin-bottom: 3px;
 }
 
 #articles .caps-title {
@@ -707,12 +708,12 @@ footer ul {
   margin: auto;
   color: lightgray;
   margin-top: 20px;
-  font-size: .7em;
+  font-size: 0.7em;
 }
 
-#copyright p { 
+#copyright p {
   margin-top: 0;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 #social ul:nth-of-type(2) li {
@@ -723,7 +724,7 @@ footer ul {
   color: white;
   text-align: center;
   padding: 30px;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 #copyright img:nth-of-type(1) {
@@ -789,7 +790,7 @@ a {
   color: inherit;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   /* ------------- Fonts 1020PX------------------ */
 
   /* ----------- Header 1020PX------------- */
@@ -869,7 +870,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   /* ---------- Header 760PX--------------- */
   header div {
     height: 50px;
@@ -939,9 +940,17 @@ a {
   }
 
   /* ----------- Articles 760PX----------------*/
-  #articles article {
-    height: 235px;
+  #articles .g1-3 {
+    width: 100%;
     margin-bottom: 10px;
+  }
+
+  #articles article .latest-img {
+    width: 15%;
+  }
+
+  .latest-articles {
+    width: 85%;
   }
 
   /* ----------- Latest Deals 760PX----------------*/
