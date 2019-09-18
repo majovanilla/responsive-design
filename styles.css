@@ -136,6 +136,32 @@ table {
   border-spacing: 0;
 }
 
+
+/* -------------- GRID STRUCTURE --------------- */
+
+.g1-3 {
+  width: 33.33%;
+}
+
+.g2-3 {
+  width: 66.66%;
+}
+
+.g1-4 {
+  width: 25%;
+}
+
+/* ----------- Generals ------------------ */
+
+.f-left {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* -------------- GENERAL STRUCTURE --------------- */
 
 body {
@@ -190,6 +216,10 @@ header section {
   color: hsla(0, 0, 100%, 0.6);
 }
 
+header ul {
+  display: inline-flex;
+}
+
 header ul:nth-of-type(2) {
   justify-content: flex-end;
   float: right;
@@ -226,15 +256,11 @@ header section:nth-of-type(3) {
   white-space: nowrap;
 }
 
-header ul {
-  display: inline-flex;
-}
-
 header section:nth-of-type(2) ul:nth-of-type(2) {
   height: 50px;
   position: absolute;
   top: 30px;
-  right: 0px;
+  right: 0;
 }
 
 .menu-li:nth-of-type(1) {
@@ -251,8 +277,7 @@ header section:nth-of-type(2) ul:nth-of-type(2) {
 }
 
 .menu-li:nth-of-type(1) a {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
-    66.1% 66.21% no-repeat;
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) 66.1% 66.21% no-repeat;
   top: 15px;
   right: 13px;
   position: absolute;
@@ -331,7 +356,7 @@ main article:nth-of-type(1) header {
 }
 
 .article-gradient:hover {
-  background: linear-gradient(175deg, transparent, rgba(0, 0, 0, 0.3) 65%,rgba(0, 0, 0, 0.8),black);
+  background: linear-gradient(175deg, transparent, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 0.8),black);
   position: absolute;
 }
 
@@ -392,7 +417,7 @@ main .g2-3 {
 .funding-large-div {
   height: 100px;
   width: 100%;
-  background: linear-gradient(rgba(255, 68, 34) 40%,rgba(255, 68, 34, 0.08) 40%);
+  background: linear-gradient(rgba(255, 68, 34) 40%, rgba(255, 68, 34, 0.08) 40%);
   position: absolute;
   top: 0;
   left: 0;
@@ -433,17 +458,6 @@ main .g2-3 {
   font-size: 0.8em;
 }
 
-#latest-funding p {
-  color: rgb(85, 85, 85);
-  padding: 0 10px;
-  line-height: 1.2;
-  font-size: 0.8em;
-}
-
-#latest-funding span {
-  color: #aaa;
-}
-
 .funding-small-icons-div {
   padding-left: 10px;
   margin-top: 35px;
@@ -453,6 +467,17 @@ main .g2-3 {
 
 .funding-small-icons-div p:hover {
   color: black;
+}
+
+#latest-funding p {
+  color: rgb(85, 85, 85);
+  padding: 0 10px;
+  line-height: 1.2;
+  font-size: 0.8em;
+}
+
+#latest-funding span {
+  color: #aaa;
 }
 
 .funding-small-icons-div:nth-of-type(2) {
@@ -511,6 +536,11 @@ main .g2-3 {
   font-size: 0.812em;
 }
 
+#articles .latest-articles .article-h2 {
+  font-size: 1em;
+  color: #f42;
+}
+
 #articles .article-h2 {
   font-size: 1.2em;
 }
@@ -522,14 +552,9 @@ main .g2-3 {
   float: left;
 }
 
-.latest-articles .caps-title {
+#articles .latest-articles .caps-title {
   color: #f42;
   margin-top: 10px;
-}
-
-.latest-articles .article-h2 {
-  font-size: 1em;
-  color: #f42;
 }
 
 #articles article .latest-img {
@@ -633,8 +658,7 @@ main .g2-3 {
   height: 60%;
 }
 .price-tag {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg)
-    no-repeat;
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg) no-repeat;
   overflow: hidden;
   color: #000;
   height: 80px;
@@ -653,6 +677,7 @@ main .g2-3 {
 }
 
 /* ----------- Footer ---------------- */
+
 footer section {
   width: 100%;
   height: 90px;
@@ -730,7 +755,7 @@ footer ul {
 }
 
 #social ul:nth-of-type(2) li:hover {
-  color:white;
+  color: white;
 }
 
 #copyright {
@@ -754,31 +779,6 @@ footer ul {
 
 #copyright span {
   color: red;
-}
-
-/* -------------- GRID STRUCTURE --------------- */
-
-.g1-3 {
-  width: 33.33%;
-}
-
-.g2-3 {
-  width: 66.66%;
-}
-
-.g1-4 {
-  width: 25%;
-}
-
-/* ----------- Generals ------------------ */
-
-.f-left {
-  float: left;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 /* ------------- Fonts ------------------ */
@@ -961,16 +961,19 @@ h5:hover {
     width: 35px;
     display: block;
   }
+
   /* ---------- Main 760PX--------------- */
 
   main {
     margin-top: 84px;
   }
+
   main .g1-3,
   main .g2-3 {
     width: 100%;
     height: 220px;
   }
+
   h1 {
     font-size: 1.2em;
   }
@@ -1051,12 +1054,6 @@ h5:hover {
     display: inline-flex;
     width: 100%;
   }
-  /*
-    h5 {
-      padding-left: 84px;
-      position: absolute;
-      top: 30%;
-    }*/
 
   .price-tag {
     display: none;
