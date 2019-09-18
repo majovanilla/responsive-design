@@ -88,12 +88,13 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
   font-family: "Noto Sans TC", sans-serif;
   box-sizing: border-box;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -107,38 +108,35 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* -------------- GENERAL STRUCTURE --------------- */
 
-/**,
-header,
-section,
-ul,
-li,
-article {
-  border: red solid 1px;
-}*/
+/* -------------- GENERAL STRUCTURE --------------- */
 
 body {
   width: 100%;
@@ -172,65 +170,6 @@ footer {
   clear: both;
   background-color: black;
 }
-/* ------------- Fonts ------------------ */
-h1 {
-  top: 60%;
-  position: absolute;
-  font-size: 3em;
-  font-weight: bold;
-  color: white;
-  z-index: 98;
-  padding: 0 20px;
-}
-
-h3 {
-  font-size: 1em;
-  color: black;
-  font-weight: bold;
-  padding: 10px 0 15px 0;
-  line-height: normal;
-}
-
-h3:hover {
-  color: #f42;
-  text-decoration: underline;
-}
-
-h5 {
-  font-size: 0.75em;
-  color: #aaa;
-  padding: 10px 0 10px 0;
-}
-
-h5:hover {
-  color: black;
-}
-
-.section-title {
-  font-size: 1.75em;
-  color: #f42;
-  font-weight: bold;
-  padding: 40px 0 20px 0;
-}
-
-.section-title:hover {
-  color: black;
-}
-
-.caps-title {
-  font-size: 1em;
-  color: white;
-  padding-bottom: 5px;
-  padding-left: 20px;
-  font-family: "Oswald", sans-serif;
-}
-
-.article-h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 0 20px;
-  color: white;
-}
 
 /* ----------- Header ------------- */
 header div {
@@ -245,11 +184,19 @@ header section {
   background-color: black;
   height: 30px;
   width: 100%;
-  color: lightgray;
   padding-left: 15px;
   font-size: 0.8em;
   padding-top: 3px;
-  color: hsla(0, 0%, 100%, 0.6);
+  color: hsla(0, 0, 100%, 0.6);
+}
+
+header ul:nth-of-type(2) {
+  justify-content: flex-end;
+  float: right;
+}
+
+header ul li {
+  padding: 5px 10px 5px 0;
 }
 
 header ul li:hover {
@@ -288,15 +235,6 @@ header section:nth-of-type(2) ul:nth-of-type(2) {
   position: absolute;
   top: 30px;
   right: 0px;
-}
-
-header ul:nth-of-type(2) {
-  justify-content: flex-end;
-  float: right;
-}
-
-header ul li {
-  padding: 5px 10px 5px 0;
 }
 
 .menu-li:nth-of-type(1) {
@@ -363,27 +301,23 @@ main h2 {
 }
 
 main article:nth-of-type(1) {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/telegram-cryptocurrency-796x417.png)
-    50% no-repeat;
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/telegram-cryptocurrency-796x417.png) 50% no-repeat;
   background-size: cover;
   border-left: white 5px solid;
 }
 
 main article:nth-of-type(2) {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay-796x530.jpg)
-    50% no-repeat;
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay-796x530.jpg) 50% no-repeat;
   background-size: cover;
 }
 
 main article:nth-of-type(3) {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/facebook-libra-cryptocurrency-EU-796x417.jpg)
-    50% no-repeat;
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/facebook-libra-cryptocurrency-EU-796x417.jpg) 50% no-repeat;
   background-size: cover;
 }
 
 main article:nth-of-type(1) header {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg)
-    no-repeat;
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
   width: 60%;
   z-index: 98;
   position: absolute;
@@ -392,24 +326,12 @@ main article:nth-of-type(1) header {
 }
 
 .article-gradient {
-  background: linear-gradient(
-    175deg,
-    transparent,
-    rgba(0, 0, 0, 0.4) 65%,
-    rgba(0, 0, 0, 0.9),
-    black
-  );
+  background: linear-gradient(175deg, transparent, rgba(0, 0, 0, 0.4) 65%, rgba(0, 0, 0, 0.9), black);
   position: absolute;
 }
 
 .article-gradient:hover {
-  background: linear-gradient(
-    175deg,
-    transparent,
-    rgba(0, 0, 0, 0.3) 65%,
-    rgba(0, 0, 0, 0.8),
-    black
-  );
+  background: linear-gradient(175deg, transparent, rgba(0, 0, 0, 0.3) 65%,rgba(0, 0, 0, 0.8),black);
   position: absolute;
 }
 
@@ -419,21 +341,11 @@ main article div {
 }
 
 main article:nth-of-type(1) div {
-  background: linear-gradient(
-    170deg,
-    rgba(255, 0, 0, 0.5) 25%,
-    rgba(0, 0, 0, 0.5),
-    black
-  );
+  background: linear-gradient(170deg, rgba(255, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.5), black);
 }
 
 main article:nth-of-type(1) div:hover {
-  background: linear-gradient(
-    170deg,
-    rgba(255, 0, 0, 0.4) 25%,
-    rgba(0, 0, 0, 0.4),
-    black
-  );
+  background: linear-gradient(170deg, rgba(255, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4), black);
 }
 
 main .g1-3 {
@@ -465,7 +377,7 @@ main .g2-3 {
   height: 50%;
 }
 
-/* ----------- Latest Funding ----------------*/
+/* ----------- Latest Funding ---------------- */
 #latest-funding article {
   float: left;
   margin-bottom: 20px;
@@ -572,7 +484,7 @@ main .g2-3 {
   margin-right: 10px;
 }
 
-/* ----------- Articles ----------------*/
+/* ----------- Articles ---------------- */
 #articles article {
   float: left;
   margin-bottom: 20px;
@@ -708,7 +620,7 @@ main .g2-3 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/pong-368x276.jpg);
 }
 
-/* ----------- Latest Deals ----------------*/
+/* ----------- Latest Deals ---------------- */
 
 #latest-deals article {
   float: left;
@@ -740,7 +652,7 @@ main .g2-3 {
   top: 14px;
 }
 
-/* ----------- Footer ----------------*/
+/* ----------- Footer ---------------- */
 footer section {
   width: 100%;
   height: 90px;
@@ -869,6 +781,67 @@ a {
   color: inherit;
 }
 
+/* ------------- Fonts ------------------ */
+
+h1 {
+  top: 60%;
+  position: absolute;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  z-index: 98;
+  padding: 0 20px;
+}
+
+h3 {
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+  padding: 10px 0 15px 0;
+  line-height: normal;
+}
+
+h3:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+h5 {
+  font-size: 0.75em;
+  color: #aaa;
+  padding: 10px 0 10px 0;
+}
+
+h5:hover {
+  color: black;
+}
+
+.section-title {
+  font-size: 1.75em;
+  color: #f42;
+  font-weight: bold;
+  padding: 40px 0 20px 0;
+}
+
+.section-title:hover {
+  color: black;
+}
+
+.caps-title {
+  font-size: 1em;
+  color: white;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.article-h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0 20px;
+  color: white;
+}
+
 @media only screen and (max-width: 1024px) {
   /* ------------- Fonts 1020PX------------------ */
 
@@ -921,7 +894,7 @@ a {
     font-size: 0.85em;
   }
 
-  /* ----------- Latest Funding 1020PX----------------*/
+  /* ----------- Latest Funding 1020PX---------------- */
 
   #latest-funding article:last-child {
     display: none;
@@ -933,11 +906,11 @@ a {
     float: none;
   }
 
-  /* ----------- Articles 1020PX----------------*/
+  /* ----------- Articles 1020PX---------------- */
 
-  /* ----------- Latest Deals 1020PX----------------*/
+  /* ----------- Latest Deals 1020PX---------------- */
 
-  /* ----------- Footer 1020PX----------------*/
+  /* ----------- Footer 1020PX---------------- */
 
   /* -------------- GRID STRUCTURE 1020PX--------------- */
 
@@ -1030,7 +1003,7 @@ a {
     top: 50%;
   }
 
-  /* ----------- Latest Funding 760PX----------------*/
+  /* ----------- Latest Funding 760PX---------------- */
 
   #latest-funding article {
     height: 200px;
@@ -1046,7 +1019,7 @@ a {
     padding: 10px 0;
   }
 
-  /* ----------- Articles 760PX----------------*/
+  /* ----------- Articles 760PX---------------- */
   #articles .g1-3 {
     width: 100%;
     margin-bottom: 10px;
@@ -1060,7 +1033,7 @@ a {
     width: 85%;
   }
 
-  /* ----------- Latest Deals 760PX----------------*/
+  /* ----------- Latest Deals 760PX---------------- */
 
   #latest-deals article {
     height: 75px;
@@ -1089,7 +1062,7 @@ a {
     display: none;
   }
 
-  /* ----------- Footer 760PX----------------*/
+  /* ----------- Footer 760PX---------------- */
 
   #copyright p {
     margin-top: 0;
