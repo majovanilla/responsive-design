@@ -219,62 +219,8 @@ header ul {
   display: inline-flex;
 }
 
-header ul:nth-of-type(2) {
-  justify-content: flex-end;
-  float: right;
-}
-
 header ul li {
   padding: 5px 10px 5px 0;
-}
-
-header section:nth-of-type(2) {
-  background-color: white;
-  height: 50px;
-  padding-top: 15px;
-  color: #aaa;
-  font-family: "Oswald", sans-serif;
-}
-
-header section:nth-of-type(3) {
-  background-color: yellow;
-  height: 30px;
-  color: black;
-  padding-top: 8px;
-  font-size: 0.8em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-header section:nth-of-type(2) ul:nth-of-type(2) {
-  height: 50px;
-  position: absolute;
-  top: 30px;
-  right: 0;
-}
-
-.menu-li:nth-of-type(1) {
-  height: 50px;
-  width: 50px;
-  position: relative;
-  border-left: 1px #eee solid;
-}
-
-.menu-li:nth-of-type(2) {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-}
-
-.menu-li:nth-of-type(1) a {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) 66.1% 66.21% no-repeat;
-  top: 15px;
-  right: 13px;
-  position: absolute;
-  opacity: 0.3;
-  height: 20px;
-  width: 30px;
 }
 
 #menu-icon {
@@ -307,43 +253,9 @@ main h2 {
   z-index: 98;
 }
 
-main article:nth-of-type(1) {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/telegram-cryptocurrency-796x417.png) 50% no-repeat;
-  background-size: cover;
-  border-left: white 5px solid;
-}
-
-main article:nth-of-type(2) {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay-796x530.jpg) 50% no-repeat;
-  background-size: cover;
-}
-
-main article:nth-of-type(3) {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/facebook-libra-cryptocurrency-EU-796x417.jpg) 50% no-repeat;
-  background-size: cover;
-}
-
-main article:nth-of-type(1) header {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
-  width: 60%;
-  z-index: 98;
-  position: absolute;
-  left: 15px;
-  top: 15px;
-}
-
 .article-gradient {
   background: linear-gradient(175deg, transparent, rgba(0, 0, 0, 0.4) 65%, rgba(0, 0, 0, 0.9), black);
   position: absolute;
-}
-
-main article div {
-  height: 100%;
-  width: 100%;
-}
-
-main article:nth-of-type(1) div {
-  background: linear-gradient(170deg, rgba(255, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.5), black);
 }
 
 main .g1-3 {
@@ -445,13 +357,6 @@ main .g2-3 {
   color: #aaa;
 }
 
-.funding-small-icons-div:nth-of-type(2) {
-  margin-top: 10px;
-  border-bottom: 1px solid rgba(255, 68, 34, 0.25);
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-}
-
 .funding-title,
 #latest-funding h3 {
   padding-top: 15px;
@@ -486,15 +391,6 @@ main .g2-3 {
   background-position: 100% 88px;
   background-size: 100% 320px;
   background-repeat: no-repeat;
-}
-
-#articles div:nth-of-type(1) {
-  height: 325px;
-  width: 100%;
-  z-index: -1;
-  padding-top: 60%;
-  position: relative;
-  margin-bottom: 3px;
 }
 
 #articles .caps-title {
@@ -532,34 +428,6 @@ main .g2-3 {
   background-repeat: no-repeat;
 }
 
-#articles article:nth-of-type(2) .latest-img {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/OnePlus-tv-hed.jpg);
-}
-
-#articles article:nth-of-type(3) .latest-img {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/app-store-apple-hed.png);
-}
-
-#articles article:nth-of-type(4) .latest-img {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/chineseverticalB1200.png);
-}
-
-#articles article:nth-of-type(5) .latest-img {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay.jpg);
-}
-
-#articles article:nth-of-type(6) .latest-img {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Untitled-design-23.jpg);
-}
-
-#articles article:nth-of-type(7) .latest-img {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Orion-Doom-Bethesda-hed.jpg);
-}
-
-#articles article:nth-of-type(8) .latest-img {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Ring-Fit-Adventure.jpg);
-}
-
 .bullet {
   color: #f42;
   font-size: 2em;
@@ -580,34 +448,6 @@ main .g2-3 {
   color: #555;
   font-size: 0.8em;
   line-height: 1.5;
-}
-
-#articles article:nth-of-type(2) {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Fitbit_Versa_2_Special_Edition_Together_V3_Crop_1-368x276.jpg);
-}
-
-#articles article:nth-of-type(3) {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/simjacker-attack-hed-368x276.jpg);
-}
-
-#articles article:nth-of-type(4) {
-  background-image: url(https://i.ytimg.com/vi/Z1jgaEO9aRs/hqdefault.jpg);
-}
-
-#articles article:nth-of-type(5) {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Learning-AI-Programming-368x276.jpg);
-}
-
-#articles article:nth-of-type(6) {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/quantum_mess-368x276.jpg);
-}
-
-#articles article:nth-of-type(7) {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Pam-Angela-The-Office-368x276.jpg);
-}
-
-#articles article:nth-of-type(8) {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/pong-368x276.jpg);
 }
 
 /* ----------- Latest Deals ---------------- */
@@ -650,11 +490,6 @@ footer section {
   padding-top: 40px;
 }
 
-footer section:nth-of-type(1) {
-  height: 160px;
-  background-color: #131313;
-}
-
 footer ul {
   display: flex;
   justify-content: center;
@@ -670,52 +505,6 @@ footer ul {
   background-repeat: no-repeat;
 }
 
-#social ul li:nth-of-type(2) a {
-  background-image: url(img/twitter.png);
-}
-
-#social ul li:nth-of-type(3) a {
-  background-image: url(img/youtube.png);
-}
-
-#social ul li:nth-of-type(4) a {
-  background-image: url(img/ig.png);
-}
-
-#social ul li:nth-of-type(5) a {
-  background-image: url(img/pin.png);
-}
-
-#social ul li:nth-of-type(6) a {
-  background-image: url(img/mail.png);
-}
-
-#social ul li:nth-of-type(7) a {
-  background-image: url(img/rss.png);
-  background-size: 15px;
-}
-
-#social ul:nth-child(1) li {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border: 2px solid #333;
-  background-color: #333;
-  margin: 8px;
-}
-
-#social ul:nth-of-type(2),
-#copyright p {
-  margin: auto;
-  color: #aaa;
-  margin-top: 20px;
-  font-size: 0.7em;
-}
-
-#social ul:nth-of-type(2) li {
-  margin: 5px;
-}
-
 #copyright {
   color: white;
   text-align: center;
@@ -728,11 +517,6 @@ footer ul {
   font-size: 0.9em;
   line-height: normal;
   width: 70%;
-}
-
-#copyright img:nth-of-type(1) {
-  width: 70px;
-  height: 10px;
 }
 
 #copyright span {
@@ -785,6 +569,234 @@ h5 {
   font-weight: bold;
   padding: 0 20px;
   color: white;
+}
+
+/* ------------- nth-of-type ------------------ */
+
+/* ------------- Header ---------------------- */
+
+header ul:nth-of-type(2) {
+  justify-content: flex-end;
+  float: right;
+}
+
+header section:nth-of-type(2) {
+  background-color: white;
+  height: 50px;
+  padding-top: 15px;
+  color: #aaa;
+  font-family: "Oswald", sans-serif;
+}
+
+header section:nth-of-type(3) {
+  background-color: yellow;
+  height: 30px;
+  color: black;
+  padding-top: 8px;
+  font-size: 0.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+header section:nth-of-type(2) ul:nth-of-type(2) {
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+.menu-li:nth-of-type(1) {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-left: 1px #eee solid;
+}
+
+.menu-li:nth-of-type(2) {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+
+.menu-li:nth-of-type(1) a {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) 66.1% 66.21% no-repeat;
+  top: 15px;
+  right: 13px;
+  position: absolute;
+  opacity: 0.3;
+  height: 20px;
+  width: 30px;
+}
+
+/* ------------- Main ---------------- */
+
+main article div {
+  height: 100%;
+  width: 100%;
+}
+
+main article:nth-of-type(1) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/telegram-cryptocurrency-796x417.png) 50% no-repeat;
+  background-size: cover;
+  border-left: white 5px solid;
+}
+
+main article:nth-of-type(2) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay-796x530.jpg) 50% no-repeat;
+  background-size: cover;
+}
+
+main article:nth-of-type(3) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/facebook-libra-cryptocurrency-EU-796x417.jpg) 50% no-repeat;
+  background-size: cover;
+}
+
+main article:nth-of-type(1) header {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
+  width: 60%;
+  z-index: 98;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+main article:nth-of-type(1) div {
+  background: linear-gradient(170deg, rgba(255, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.5), black);
+}
+
+/* ------------- Latest Funding  ---------------- */
+
+.funding-small-icons-div:nth-of-type(2) {
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(255, 68, 34, 0.25);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+/* ------------- Articles  ---------------- */
+
+#articles article:nth-of-type(2) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/OnePlus-tv-hed.jpg);
+}
+
+#articles article:nth-of-type(3) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/app-store-apple-hed.png);
+}
+
+#articles article:nth-of-type(4) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/chineseverticalB1200.png);
+}
+
+#articles article:nth-of-type(5) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay.jpg);
+}
+
+#articles article:nth-of-type(6) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Untitled-design-23.jpg);
+}
+
+#articles article:nth-of-type(7) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Orion-Doom-Bethesda-hed.jpg);
+}
+
+#articles article:nth-of-type(8) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Ring-Fit-Adventure.jpg);
+}
+
+#articles article:nth-of-type(2) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Fitbit_Versa_2_Special_Edition_Together_V3_Crop_1-368x276.jpg);
+}
+
+#articles article:nth-of-type(3) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/simjacker-attack-hed-368x276.jpg);
+}
+
+#articles article:nth-of-type(4) {
+  background-image: url(https://i.ytimg.com/vi/Z1jgaEO9aRs/hqdefault.jpg);
+}
+
+#articles article:nth-of-type(5) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Learning-AI-Programming-368x276.jpg);
+}
+
+#articles article:nth-of-type(6) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/quantum_mess-368x276.jpg);
+}
+
+#articles article:nth-of-type(7) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Pam-Angela-The-Office-368x276.jpg);
+}
+
+#articles article:nth-of-type(8) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/pong-368x276.jpg);
+}
+
+#articles div:nth-of-type(1) {
+  height: 325px;
+  width: 100%;
+  z-index: -1;
+  padding-top: 60%;
+  position: relative;
+  margin-bottom: 3px;
+}
+
+/* ------------- Footer  ---------------- */
+
+footer section:nth-of-type(1) {
+  height: 160px;
+  background-color: #131313;
+}
+
+#social ul li:nth-of-type(2) a {
+  background-image: url(img/twitter.png);
+}
+
+#social ul li:nth-of-type(3) a {
+  background-image: url(img/youtube.png);
+}
+
+#social ul li:nth-of-type(4) a {
+  background-image: url(img/ig.png);
+}
+
+#social ul li:nth-of-type(5) a {
+  background-image: url(img/pin.png);
+}
+
+#social ul li:nth-of-type(6) a {
+  background-image: url(img/mail.png);
+}
+
+#social ul li:nth-of-type(7) a {
+  background-image: url(img/rss.png);
+  background-size: 15px;
+}
+
+#social ul:nth-child(1) li {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #333;
+  margin: 8px;
+}
+
+#social ul:nth-of-type(2),
+#copyright p {
+  margin: auto;
+  color: #aaa;
+  margin-top: 20px;
+  font-size: 0.7em;
+}
+
+#social ul:nth-of-type(2) li {
+  margin: 5px;
+}
+
+#copyright img:nth-of-type(1) {
+  width: 70px;
+  height: 10px;
 }
 
 /* ------------- Hover ------------------ */
