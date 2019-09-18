@@ -306,17 +306,7 @@ header ul li {
   border-left: 1px #eee solid;
 }
 
-.menu-li:nth-of-type(1) a:hover {
-  opacity: 0.5;
-}
-
 .menu-li:nth-of-type(2) {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-}
-
-#menu-icon {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -331,6 +321,16 @@ header ul li {
   opacity: 0.3;
   height: 20px;
   width: 30px;
+}
+
+.menu-li:nth-of-type(1) a:hover {
+  opacity: 0.5;
+}
+
+#menu-icon {
+  position: absolute;
+  height: 1px;
+  width: 1px;
 }
 
 /* ---------- Main --------------- */
@@ -369,16 +369,6 @@ main article:nth-of-type(1) {
   border-left: white 5px solid;
 }
 
-main article:nth-of-type(1) header {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg)
-    no-repeat;
-  width: 60%;
-  z-index: 98;
-  position: absolute;
-  left: 15px;
-  top: 15px;
-}
-
 main article:nth-of-type(2) {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay-796x530.jpg)
     50% no-repeat;
@@ -389,6 +379,16 @@ main article:nth-of-type(3) {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/facebook-libra-cryptocurrency-EU-796x417.jpg)
     50% no-repeat;
   background-size: cover;
+}
+
+main article:nth-of-type(1) header {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg)
+    no-repeat;
+  width: 60%;
+  z-index: 98;
+  position: absolute;
+  left: 15px;
+  top: 15px;
 }
 
 .article-gradient {
@@ -480,10 +480,7 @@ main .g2-3 {
 .funding-large-div {
   height: 100px;
   width: 100%;
-  background: linear-gradient(
-    rgba(255, 68, 34) 40%,
-    rgba(255, 68, 34, 0.08) 40%
-  );
+  background: linear-gradient(rgba(255, 68, 34) 40%,rgba(255, 68, 34, 0.08) 40%);
   position: absolute;
   top: 0;
   left: 0;
@@ -531,10 +528,6 @@ main .g2-3 {
   font-size: 0.8em;
 }
 
-#latest-funding .funding-small-icons-div p:hover {
-  color: black;
-}
-
 #latest-funding span {
   color: #aaa;
 }
@@ -544,6 +537,10 @@ main .g2-3 {
   margin-top: 35px;
   display: inline-flex;
   width: 100%;
+}
+
+.funding-small-icons-div p:hover {
+  color: black;
 }
 
 .funding-small-icons-div:nth-of-type(2) {
@@ -613,12 +610,12 @@ main .g2-3 {
   float: left;
 }
 
-#articles .latest-articles .caps-title {
+.latest-articles .caps-title {
   color: #f42;
   margin-top: 10px;
 }
 
-#articles .latest-articles .article-h2 {
+.latest-articles .article-h2 {
   font-size: 1em;
   color: #f42;
 }
@@ -760,6 +757,41 @@ footer ul {
   justify-content: center;
 }
 
+#social ul li a {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-image: url(img/FB.png);
+  background-position: 42% 45%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+#social ul li:nth-of-type(2) a {
+  background-image: url(img/twitter.png);
+}
+
+#social ul li:nth-of-type(3) a {
+  background-image: url(img/youtube.png);
+}
+
+#social ul li:nth-of-type(4) a {
+  background-image: url(img/ig.png);
+}
+
+#social ul li:nth-of-type(5) a {
+  background-image: url(img/pin.png);
+}
+
+#social ul li:nth-of-type(6) a {
+  background-image: url(img/mail.png);
+}
+
+#social ul li:nth-of-type(7) a {
+  background-image: url(img/rss.png);
+  background-size: 15px;
+}
+
 #social ul:nth-child(1) li {
   height: 40px;
   width: 40px;
@@ -776,18 +808,17 @@ footer ul {
 #social ul:nth-of-type(2),
 #copyright p {
   margin: auto;
-  color: lightgray;
+  color: #aaa;
   margin-top: 20px;
   font-size: 0.7em;
 }
 
-#copyright p {
-  margin-top: 0;
-  font-size: 0.9em;
-}
-
 #social ul:nth-of-type(2) li {
   margin: 5px;
+}
+
+#social ul:nth-of-type(2) li:hover {
+  color:white;
 }
 
 #copyright {
@@ -797,43 +828,20 @@ footer ul {
   font-size: 0.9em;
 }
 
+#copyright p {
+  margin-top: 0;
+  font-size: 0.9em;
+  line-height: normal;
+  width: 70%;
+}
+
 #copyright img:nth-of-type(1) {
-  width: 8%;
+  width: 70px;
   height: 10px;
 }
 
 #copyright span {
   color: red;
-}
-
-#social ul li a {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  background-image: url(img/FB.png);
-  background-position: 42% 45%;
-  background-size: 20px;
-  background-repeat: no-repeat;
-}
-
-#social ul li:nth-of-type(2) a {
-  background-image: url(img/twitter.png);
-}
-#social ul li:nth-of-type(3) a {
-  background-image: url(img/youtube.png);
-}
-#social ul li:nth-of-type(4) a {
-  background-image: url(img/ig.png);
-}
-#social ul li:nth-of-type(5) a {
-  background-image: url(img/pin.png);
-}
-#social ul li:nth-of-type(6) a {
-  background-image: url(img/mail.png);
-}
-#social ul li:nth-of-type(7) a {
-  background-image: url(img/rss.png);
-  background-size: 15px;
 }
 
 /* -------------- GRID STRUCTURE --------------- */
@@ -850,7 +858,7 @@ footer ul {
   width: 25%;
 }
 
-/* ----------- More Generals ------------------ */
+/* ----------- Generals ------------------ */
 
 .f-left {
   float: left;
@@ -1082,6 +1090,12 @@ a {
   }
 
   /* ----------- Footer 760PX----------------*/
+
+  #copyright p {
+    margin-top: 0;
+    font-size: 0.75em;
+    line-height: normal;
+  }
 
   /* -------------- GRID STRUCTURE 760PX--------------- */
 
