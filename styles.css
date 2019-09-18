@@ -136,7 +136,6 @@ table {
   border-spacing: 0;
 }
 
-
 /* -------------- GRID STRUCTURE --------------- */
 
 .g1-3 {
@@ -229,20 +228,12 @@ header ul li {
   padding: 5px 10px 5px 0;
 }
 
-header ul li:hover {
-  color: white;
-}
-
 header section:nth-of-type(2) {
   background-color: white;
   height: 50px;
   padding-top: 15px;
   color: #aaa;
   font-family: "Oswald", sans-serif;
-}
-
-header section:nth-of-type(2) ul li:hover {
-  color: black;
 }
 
 header section:nth-of-type(3) {
@@ -286,10 +277,6 @@ header section:nth-of-type(2) ul:nth-of-type(2) {
   width: 30px;
 }
 
-.menu-li:nth-of-type(1) a:hover {
-  opacity: 0.5;
-}
-
 #menu-icon {
   position: absolute;
   height: 1px;
@@ -312,11 +299,6 @@ main h3 {
   float: right;
   z-index: 98;
   padding-right: 20px;
-}
-
-main h3:hover {
-  color: white;
-  text-decoration: none;
 }
 
 main h2 {
@@ -355,11 +337,6 @@ main article:nth-of-type(1) header {
   position: absolute;
 }
 
-.article-gradient:hover {
-  background: linear-gradient(175deg, transparent, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 0.8),black);
-  position: absolute;
-}
-
 main article div {
   height: 100%;
   width: 100%;
@@ -367,10 +344,6 @@ main article div {
 
 main article:nth-of-type(1) div {
   background: linear-gradient(170deg, rgba(255, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.5), black);
-}
-
-main article:nth-of-type(1) div:hover {
-  background: linear-gradient(170deg, rgba(255, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4), black);
 }
 
 main .g1-3 {
@@ -438,10 +411,6 @@ main .g2-3 {
   color: #f42;
 }
 
-#latest-funding ul li:hover {
-  color: black;
-}
-
 #latest-funding ul li:last-of-type {
   border-right: none;
 }
@@ -463,10 +432,6 @@ main .g2-3 {
   margin-top: 35px;
   display: inline-flex;
   width: 100%;
-}
-
-.funding-small-icons-div p:hover {
-  color: black;
 }
 
 #latest-funding p {
@@ -536,13 +501,13 @@ main .g2-3 {
   font-size: 0.812em;
 }
 
+#articles .article-h2 {
+  font-size: 1.2em;
+}
+
 #articles .latest-articles .article-h2 {
   font-size: 1em;
   color: #f42;
-}
-
-#articles .article-h2 {
-  font-size: 1.2em;
 }
 
 .latest-articles {
@@ -657,6 +622,7 @@ main .g2-3 {
   width: 100%;
   height: 60%;
 }
+
 .price-tag {
   background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg) no-repeat;
   overflow: hidden;
@@ -738,10 +704,6 @@ footer ul {
   margin: 8px;
 }
 
-#social ul:nth-child(1) li:hover {
-  background-color: black;
-}
-
 #social ul:nth-of-type(2),
 #copyright p {
   margin: auto;
@@ -752,10 +714,6 @@ footer ul {
 
 #social ul:nth-of-type(2) li {
   margin: 5px;
-}
-
-#social ul:nth-of-type(2) li:hover {
-  color: white;
 }
 
 #copyright {
@@ -801,19 +759,10 @@ h3 {
   line-height: normal;
 }
 
-h3:hover {
-  color: #f42;
-  text-decoration: underline;
-}
-
 h5 {
   font-size: 0.75em;
   color: #aaa;
   padding: 10px 0 10px 0;
-}
-
-h5:hover {
-  color: black;
 }
 
 .section-title {
@@ -821,10 +770,6 @@ h5:hover {
   color: #f42;
   font-weight: bold;
   padding: 40px 0 20px 0;
-}
-
-.section-title:hover {
-  color: black;
 }
 
 .caps-title {
@@ -842,6 +787,65 @@ h5:hover {
   color: white;
 }
 
+/* ------------- Hover ------------------ */
+
+header ul li:hover {
+  color: white;
+}
+
+header section:nth-of-type(2) ul li:hover {
+  color: black;
+}
+
+.menu-li:nth-of-type(1) a:hover {
+  opacity: 0.5;
+}
+
+main h3:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.article-gradient:hover {
+  background: linear-gradient(175deg, transparent, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 0.8), black);
+  position: absolute;
+}
+
+main article:nth-of-type(1) div:hover {
+  background: linear-gradient(170deg, rgba(255, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4), black);
+}
+
+#latest-funding ul li:hover {
+  color: black;
+}
+
+.funding-small-icons-div p:hover {
+  color: black;
+}
+
+#social ul:nth-child(1) li:hover {
+  background-color: black;
+}
+
+#social ul:nth-of-type(2) li:hover {
+  color: white;
+}
+
+.section-title:hover {
+  color: black;
+}
+
+h5:hover {
+  color: black;
+}
+
+h3:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+/* ------------- Media Queries ------------------ */
+
 @media only screen and (max-width: 1024px) {
   /* ------------- Fonts 1020PX------------------ */
 
@@ -857,6 +861,7 @@ h5:hover {
   header section:nth-of-type(2) {
     padding-left: 115px;
   }
+  
   header section:nth-of-type(3) {
     text-align: center;
   }
