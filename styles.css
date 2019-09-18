@@ -196,7 +196,35 @@ footer {
   background-color: black;
 }
 
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 1.75em;
+  color: #f42;
+  font-weight: bold;
+  padding: 40px 0 20px 0;
+}
+
+.caps-title {
+  font-size: 1em;
+  color: white;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.article-h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0 20px;
+  color: white;
+}
+
 /* ----------- Header ------------- */
+
 header div {
   position: absolute;
   top: 0;
@@ -235,22 +263,6 @@ main article {
   position: relative;
   border-bottom: white 8px solid;
   border-right: white 8px solid;
-}
-
-main h3 {
-  font-size: 0.9em;
-  color: white;
-  font-weight: normal;
-  position: relative;
-  float: right;
-  z-index: 98;
-  padding-right: 20px;
-}
-
-main h2 {
-  position: relative;
-  top: 60%;
-  z-index: 98;
 }
 
 .article-gradient {
@@ -321,10 +333,6 @@ main .g2-3 {
   border-right: red 1px solid;
   padding: 0 10px;
   color: #f42;
-}
-
-#latest-funding ul li:last-of-type {
-  border-right: none;
 }
 
 .funding-article-img {
@@ -490,11 +498,6 @@ footer section {
   padding-top: 40px;
 }
 
-footer ul {
-  display: flex;
-  justify-content: center;
-}
-
 #social ul li a {
   width: 40px;
   height: 40px;
@@ -535,6 +538,12 @@ h1 {
   padding: 0 20px;
 }
 
+main h2 {
+  position: relative;
+  top: 60%;
+  z-index: 98;
+}
+
 h3 {
   font-size: 1em;
   color: black;
@@ -543,32 +552,20 @@ h3 {
   line-height: normal;
 }
 
+main h3 {
+  font-size: 0.9em;
+  color: white;
+  font-weight: normal;
+  position: relative;
+  float: right;
+  z-index: 98;
+  padding-right: 20px;
+}
+
 h5 {
   font-size: 0.75em;
   color: #aaa;
   padding: 10px 0 10px 0;
-}
-
-.section-title {
-  font-size: 1.75em;
-  color: #f42;
-  font-weight: bold;
-  padding: 40px 0 20px 0;
-}
-
-.caps-title {
-  font-size: 1em;
-  color: white;
-  padding-bottom: 5px;
-  padding-left: 20px;
-  font-family: "Oswald", sans-serif;
-}
-
-.article-h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 0 20px;
-  color: white;
 }
 
 /* ------------- nth-of-type ------------------ */
@@ -672,6 +669,10 @@ main article:nth-of-type(1) div {
   border-bottom: 1px solid rgba(255, 68, 34, 0.25);
   margin-bottom: 10px;
   padding-bottom: 10px;
+}
+
+#latest-funding ul li:last-of-type {
+  border-right: none;
 }
 
 /* ------------- Articles  ---------------- */
