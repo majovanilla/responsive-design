@@ -191,10 +191,19 @@ h3 {
   line-height: normal;
 }
 
+h3:hover {
+  color: red;
+  text-decoration: underline;
+}
+
 h5 {
   font-size: 0.75em;
   color: #aaa;
   padding: 10px 0 10px 0;
+}
+
+h5:hover {
+  color: black;
 }
 
 .section-title {
@@ -202,6 +211,10 @@ h5 {
   color: #f42;
   font-weight: bold;
   padding: 40px 0 20px 0;
+}
+
+.section-title:hover {
+  color: black;
 }
 
 .caps-title {
@@ -238,13 +251,35 @@ header section {
   color: hsla(0, 0%, 100%, 0.6);
 }
 
-header ul {
-  display: inline-flex;
+header ul li:hover {
+  color: white;
 }
 
-header ul:nth-of-type(2) {
-  justify-content: flex-end;
-  float: right;
+header section:nth-of-type(2) {
+  background-color: white;
+  height: 50px;
+  padding-top: 15px;
+  color: #aaa;
+  font-family: "Oswald", sans-serif;
+}
+
+header section:nth-of-type(2) ul li:hover {
+  color: black;
+}
+
+header section:nth-of-type(3) {
+  background-color: yellow;
+  height: 30px;
+  color: black;
+  padding-top: 8px;
+  font-size: 0.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+header ul {
+  display: inline-flex;
 }
 
 header section:nth-of-type(2) ul:nth-of-type(2) {
@@ -253,6 +288,15 @@ header section:nth-of-type(2) ul:nth-of-type(2) {
   position: absolute;
   top: 30px;
   right: 20px;
+}
+
+header ul:nth-of-type(2) {
+  justify-content: flex-end;
+  float: right;
+}
+
+header ul li {
+  padding: 5px 10px 5px 0;
 }
 
 .search-icon {
@@ -266,30 +310,6 @@ header section:nth-of-type(2) ul:nth-of-type(2) {
   top: 15px;
   right: -5px;
   position: absolute;
-}
-
-header ul li {
-  padding: 5px 10px 5px 0;
-}
-
-header section:nth-of-type(2) {
-  background-color: white;
-  height: 50px;
-  padding-top: 15px;
-  color: #aaa;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-}
-
-header section:nth-of-type(3) {
-  background-color: yellow;
-  height: 30px;
-  color: black;
-  padding-top: 8px;
-  font-size: 0.8em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 /* ---------- Main --------------- */
@@ -438,6 +458,10 @@ main .g2-3 {
   color: #f42;
 }
 
+#latest-funding ul li:hover {
+  color: black;
+}
+
 #latest-funding ul li:last-of-type {
   border-right: none;
 }
@@ -459,6 +483,10 @@ main .g2-3 {
   padding: 0 10px;
   line-height: 1.2;
   font-size: 0.8em;
+}
+
+#latest-funding .funding-small-icons-div p:hover {
+  color:black;
 }
 
 #latest-funding span {
@@ -884,6 +912,9 @@ a {
 
   /* ---------- Main 760PX--------------- */
 
+  main {
+    margin-top: 84px;
+  }
   main .g1-3,
   main .g2-3 {
     width: 100%;
