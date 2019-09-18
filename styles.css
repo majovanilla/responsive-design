@@ -90,7 +90,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
@@ -209,7 +209,7 @@ h5 {
   color: white;
   padding-bottom: 5px;
   padding-left: 20px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .article-h2 {
@@ -233,9 +233,9 @@ header section {
   width: 100%;
   color: lightgray;
   padding-left: 15px;
-  font-size: .8em;
+  font-size: 0.8em;
   padding-top: 3px;
-  color: hsla(0,0%,100%,.6);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 header ul {
@@ -247,6 +247,27 @@ header ul:nth-of-type(2) {
   float: right;
 }
 
+header section:nth-of-type(2) ul:nth-of-type(2) {
+  border-left: 1px lightgray solid;
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.search-icon {
+  height: 20px;
+  width: 30px;
+}
+
+.search-icon a {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
+    65% 65% no-repeat;
+  top: 15px;
+  right: -5px;
+  position: absolute;
+}
+
 header ul li {
   padding: 5px 10px 5px 0;
 }
@@ -256,16 +277,8 @@ header section:nth-of-type(2) {
   height: 50px;
   padding-top: 15px;
   color: #aaa;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
-}
-
-header section ul li a {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
-    16px /0 65%;
-  height: 50px;
-  width: 50px;
-  position: absolute;
 }
 
 header section:nth-of-type(3) {
