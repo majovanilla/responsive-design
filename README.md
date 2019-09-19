@@ -33,7 +33,7 @@
     <a href="https://github.com/majovainilla/responsive-design"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/majovainilla/responsive-design">View Demo</a>
+    <a href="https://majovainilla.github.io/responsive-design/">View Demo</a>
     ·
     <a href="https://github.com/majovainilla/responsive-design/issues">Report Bug</a>
     ·
