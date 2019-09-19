@@ -85,6 +85,8 @@ You can see it here:  https://majovainilla.github.io/responsive-design/
 ## Contact
 
 María José Reyes - [@majovainilla](https://github.com/majovainilla) - maria_reyes@me.com
+<br />
+<br />
 María Eugenia Quemé - [@MaruKK](https://twitter.com/MaruKK) - [@euqueme](https://github.com/euqueme) - euqueme@gmail.com
 
 Project Link: [https://github.com/majovainilla/responsive-design)
