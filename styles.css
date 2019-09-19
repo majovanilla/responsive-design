@@ -223,6 +223,53 @@ footer ul {
   color: white;
 }
 
+/* ------------- Fonts ------------------ */
+
+h1 {
+  top: 60%;
+  position: absolute;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  z-index: 98;
+  padding: 0 20px;
+}
+
+main h2 {
+  position: relative;
+  top: 60%;
+  z-index: 98;
+}
+
+h3 {
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+  padding: 10px 0 15px 0;
+  line-height: normal;
+}
+
+h3:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+main h3 {
+  font-size: 0.9em;
+  color: white;
+  font-weight: normal;
+  position: relative;
+  float: right;
+  z-index: 98;
+  padding-right: 20px;
+}
+
+h5 {
+  font-size: 0.75em;
+  color: #aaa;
+  padding: 10px 0 10px 0;
+}
+
 /* ----------- Header ------------- */
 
 header div {
@@ -251,10 +298,41 @@ header ul li {
   padding: 5px 10px 5px 0;
 }
 
+header ul li:hover {
+  color: white;
+}
+
 #menu-icon {
   position: absolute;
   height: 1px;
   width: 1px;
+}
+
+header section:nth-of-type(2) ul li:hover {
+  color: black;
+}
+
+.menu-li:nth-of-type(1) {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-left: 1px #eee solid;
+}
+
+.menu-li:nth-of-type(1) a:hover {
+  opacity: 0.5;
+}
+
+header section:nth-of-type(2) ul:nth-of-type(2) {
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+header ul:nth-of-type(2) {
+  justify-content: flex-end;
+  float: right;
 }
 
 /* ---------- Main --------------- */
@@ -276,6 +354,22 @@ main .g1-3 {
 
 main .g2-3 {
   height: 540px;
+}
+
+main article:nth-of-type(1) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/telegram-cryptocurrency-796x417.png) 50% no-repeat;
+  background-size: cover;
+  border-left: white 5px solid;
+}
+
+main article:nth-of-type(2) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay-796x530.jpg) 50% no-repeat;
+  background-size: cover;
+}
+
+main article:nth-of-type(3) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/facebook-libra-cryptocurrency-EU-796x417.jpg) 50% no-repeat;
+  background-size: cover;
 }
 
 /* ----------- Latest News ---------- */
@@ -352,6 +446,10 @@ main .g2-3 {
   margin-top: 35px;
   display: inline-flex;
   width: 100%;
+}
+
+.funding-small-icons-div p:hover {
+  color: black;
 }
 
 #latest-funding p {
@@ -526,56 +624,9 @@ footer section {
   color: red;
 }
 
-/* ------------- Fonts ------------------ */
-
-h1 {
-  top: 60%;
-  position: absolute;
-  font-size: 3em;
-  font-weight: bold;
-  color: white;
-  z-index: 98;
-  padding: 0 20px;
-}
-
-main h2 {
-  position: relative;
-  top: 60%;
-  z-index: 98;
-}
-
-h3 {
-  font-size: 1em;
-  color: black;
-  font-weight: bold;
-  padding: 10px 0 15px 0;
-  line-height: normal;
-}
-
-main h3 {
-  font-size: 0.9em;
-  color: white;
-  font-weight: normal;
-  position: relative;
-  float: right;
-  z-index: 98;
-  padding-right: 20px;
-}
-
-h5 {
-  font-size: 0.75em;
-  color: #aaa;
-  padding: 10px 0 10px 0;
-}
-
 /* ------------- nth-of-type ------------------ */
 
 /* ------------- Header ---------------------- */
-
-header ul:nth-of-type(2) {
-  justify-content: flex-end;
-  float: right;
-}
 
 header section:nth-of-type(2) {
   background-color: white;
@@ -594,20 +645,6 @@ header section:nth-of-type(3) {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-header section:nth-of-type(2) ul:nth-of-type(2) {
-  height: 50px;
-  position: absolute;
-  top: 30px;
-  right: 0;
-}
-
-.menu-li:nth-of-type(1) {
-  height: 50px;
-  width: 50px;
-  position: relative;
-  border-left: 1px #eee solid;
 }
 
 .menu-li:nth-of-type(2) {
@@ -631,22 +668,6 @@ header section:nth-of-type(2) ul:nth-of-type(2) {
 main article div {
   height: 100%;
   width: 100%;
-}
-
-main article:nth-of-type(1) {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/telegram-cryptocurrency-796x417.png) 50% no-repeat;
-  background-size: cover;
-  border-left: white 5px solid;
-}
-
-main article:nth-of-type(2) {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay-796x530.jpg) 50% no-repeat;
-  background-size: cover;
-}
-
-main article:nth-of-type(3) {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/facebook-libra-cryptocurrency-EU-796x417.jpg) 50% no-repeat;
-  background-size: cover;
 }
 
 main article:nth-of-type(1) header {
@@ -733,6 +754,10 @@ main article:nth-of-type(1) div {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/pong-368x276.jpg);
 }
 
+main article:nth-of-type(1) div:hover {
+  background: linear-gradient(170deg, rgba(255, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4), black);
+}
+
 #articles div:nth-of-type(1) {
   height: 325px;
   width: 100%;
@@ -802,16 +827,8 @@ footer section:nth-of-type(1) {
 
 /* ------------- Hover ------------------ */
 
-header ul li:hover {
-  color: white;
-}
-
-header section:nth-of-type(2) ul li:hover {
+h5:hover {
   color: black;
-}
-
-.menu-li:nth-of-type(1) a:hover {
-  opacity: 0.5;
 }
 
 main h3:hover {
@@ -824,15 +841,7 @@ main h3:hover {
   position: absolute;
 }
 
-main article:nth-of-type(1) div:hover {
-  background: linear-gradient(170deg, rgba(255, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4), black);
-}
-
 #latest-funding ul li:hover {
-  color: black;
-}
-
-.funding-small-icons-div p:hover {
   color: black;
 }
 
@@ -846,15 +855,6 @@ main article:nth-of-type(1) div:hover {
 
 .section-title:hover {
   color: black;
-}
-
-h5:hover {
-  color: black;
-}
-
-h3:hover {
-  color: #f42;
-  text-decoration: underline;
 }
 
 /* ------------- Media Queries ------------------ */
@@ -898,18 +898,18 @@ h3:hover {
     height: 30%;
   }
 
-  main h3 {
-    display: none;
+  /* ----------- FONTS---------- */
+
+  h3 {
+    font-size: 0.85em;
   }
 
   h1 {
     font-size: 2em;
   }
 
-  /* ----------- Latest News 1020PX---------- */
-
-  h3 {
-    font-size: 0.85em;
+  main h3 {
+    display: none;
   }
 
   /* ----------- Latest Funding 1020PX---------------- */
@@ -942,6 +942,17 @@ h3:hover {
 }
 
 @media only screen and (max-width: 768px) {
+
+  /* -------------- GRID STRUCTURE 760PX--------------- */
+
+  .g1-3 {
+    width: 100%;
+  }
+
+  .g1-4 {
+    width: 100%;
+  }
+
   /* ---------- Header 760PX--------------- */
 
   header div {
@@ -1084,16 +1095,4 @@ h3:hover {
     font-size: 0.75em;
     line-height: normal;
   }
-
-  /* -------------- GRID STRUCTURE 760PX--------------- */
-
-  .g1-3 {
-    width: 100%;
-  }
-
-  .g1-4 {
-    width: 100%;
-  }
-
-  /* ----------- More Generals 760PX------------------ */
 }
