@@ -106,4 +106,4 @@ Project Link: [https://github.com/majovainilla/responsive-design)
 [stars-url]: https://github.com/majovainilla/responsive-design/stargazers
 [issues-shield]: https://img.shields.io/github/issues/majovainilla/responsive-design.svg?style=flat-square
 [issues-url]: https://github.com/majovainilla/responsive-design/issues
-[product-screenshot]: img/screenshot.png
+[product-screenshot]: img/screenshot.PNG
