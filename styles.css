@@ -109,10 +109,6 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
 ol,
 ul {
   list-style: none;
@@ -164,6 +160,7 @@ a {
 /* -------------- GENERAL STRUCTURE --------------- */
 
 body {
+  line-height: 1;
   width: 100%;
 }
 
@@ -249,11 +246,6 @@ h3 {
   line-height: normal;
 }
 
-h3:hover {
-  color: #f42;
-  text-decoration: underline;
-}
-
 main h3 {
   font-size: 0.9em;
   color: white;
@@ -262,6 +254,16 @@ main h3 {
   float: right;
   z-index: 98;
   padding-right: 20px;
+}
+
+h3:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+main h3:hover {
+  color: white;
+  text-decoration: none;
 }
 
 h5 {
@@ -319,8 +321,23 @@ header section:nth-of-type(2) ul li:hover {
   border-left: 1px #eee solid;
 }
 
+.menu-li:nth-of-type(1) a {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) 66.1% 66.21% no-repeat;
+  top: 15px;
+  right: 13px;
+  position: absolute;
+  opacity: 0.3;
+  height: 20px;
+  width: 30px;
+}
+
 .menu-li:nth-of-type(1) a:hover {
   opacity: 0.5;
+}
+
+header ul:nth-of-type(2) {
+  justify-content: flex-end;
+  float: right;
 }
 
 header section:nth-of-type(2) ul:nth-of-type(2) {
@@ -328,11 +345,6 @@ header section:nth-of-type(2) ul:nth-of-type(2) {
   position: absolute;
   top: 30px;
   right: 0;
-}
-
-header ul:nth-of-type(2) {
-  justify-content: flex-end;
-  float: right;
 }
 
 /* ---------- Main --------------- */
@@ -653,16 +665,6 @@ header section:nth-of-type(3) {
   width: 1px;
 }
 
-.menu-li:nth-of-type(1) a {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) 66.1% 66.21% no-repeat;
-  top: 15px;
-  right: 13px;
-  position: absolute;
-  opacity: 0.3;
-  height: 20px;
-  width: 30px;
-}
-
 /* ------------- Main ---------------- */
 
 main article div {
@@ -831,11 +833,6 @@ h5:hover {
   color: black;
 }
 
-main h3:hover {
-  color: white;
-  text-decoration: none;
-}
-
 .article-gradient:hover {
   background: linear-gradient(175deg, transparent, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 0.8), black);
   position: absolute;
@@ -942,9 +939,8 @@ main h3:hover {
 }
 
 @media only screen and (max-width: 768px) {
-
-  /* -------------- GRID STRUCTURE 760PX--------------- */
-
+/* -------------- GRID STRUCTURE 760PX--------------- */
+  
   .g1-3 {
     width: 100%;
   }
