@@ -871,7 +871,7 @@ h5:hover {
   header section:nth-of-type(2) {
     padding-left: 115px;
   }
-  
+
   header section:nth-of-type(3) {
     text-align: center;
   }
@@ -939,8 +939,8 @@ h5:hover {
 }
 
 @media only screen and (max-width: 768px) {
-/* -------------- GRID STRUCTURE 760PX--------------- */
-  
+  /* -------------- GRID STRUCTURE 760PX--------------- */
+ 
   .g1-3 {
     width: 100%;
   }
