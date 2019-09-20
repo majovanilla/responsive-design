@@ -863,7 +863,7 @@ h5:hover {
   /* ----------- Header 1020PX------------- */
 
   header div {
-    background: url(img/tnw.png) no-repeat;
+    background: url(img/tnw.PNG) no-repeat;
     background-size: cover;
     z-index: auto;
   }
