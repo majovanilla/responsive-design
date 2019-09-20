@@ -1,0 +1,1095 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: "Noto Sans TC", sans-serif;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* -------------- GRID STRUCTURE --------------- */
+
+.g1-3 {
+  width: 33.33%;
+}
+
+.g2-3 {
+  width: 66.66%;
+}
+
+.g1-4 {
+  width: 25%;
+}
+
+/* ----------- Generals ------------------ */
+
+.f-left {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -------------- GENERAL STRUCTURE --------------- */
+
+body {
+  line-height: 1;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 99;
+}
+
+main {
+  margin-top: 115px;
+  position: relative;
+  width: 100%;
+}
+
+section {
+  width: 90%;
+  margin: auto;
+  clear: both;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  height: 260px;
+  clear: both;
+  background-color: black;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 1.75em;
+  color: #f42;
+  font-weight: bold;
+  padding: 40px 0 20px 0;
+}
+
+.caps-title {
+  font-size: 1em;
+  color: white;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.article-h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0 20px;
+  color: white;
+}
+
+/* ------------- Fonts ------------------ */
+
+h1 {
+  top: 60%;
+  position: absolute;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  z-index: 98;
+  padding: 0 20px;
+}
+
+main h2 {
+  position: relative;
+  top: 60%;
+  z-index: 98;
+}
+
+h3 {
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+  padding: 10px 0 15px 0;
+  line-height: normal;
+}
+
+main h3 {
+  font-size: 0.9em;
+  color: white;
+  font-weight: normal;
+  position: relative;
+  float: right;
+  z-index: 98;
+  padding-right: 20px;
+}
+
+h3:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+main h3:hover {
+  color: white;
+  text-decoration: none;
+}
+
+h5 {
+  font-size: 0.75em;
+  color: #aaa;
+  padding: 10px 0 10px 0;
+}
+
+/* ----------- Header ------------- */
+
+header div {
+  position: absolute;
+  top: 0;
+  height: 80px;
+  width: 105px;
+  z-index: -1;
+}
+
+header section {
+  background-color: black;
+  height: 30px;
+  width: 100%;
+  padding-left: 15px;
+  font-size: 0.8em;
+  padding-top: 3px;
+  color: hsla(0, 1%, 100%, 0.6);
+}
+
+header ul {
+  display: inline-flex;
+}
+
+header ul li {
+  padding: 5px 10px 5px 0;
+}
+
+header ul li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#menu-icon {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+
+header section:nth-of-type(2) ul li:hover {
+  color: black;
+}
+
+.menu-li:nth-of-type(1) {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-left: 1px #eee solid;
+}
+
+.menu-li:nth-of-type(1) a {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) 66.1% 66.21% no-repeat;
+  top: 15px;
+  right: 13px;
+  position: absolute;
+  opacity: 0.3;
+  height: 20px;
+  width: 30px;
+}
+
+.menu-li:nth-of-type(1) a:hover {
+  opacity: 0.5;
+}
+
+header ul:nth-of-type(2) {
+  justify-content: flex-end;
+  float: right;
+}
+
+header section:nth-of-type(2) ul:nth-of-type(2) {
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+/* ---------- Main --------------- */
+
+main article {
+  position: relative;
+  border-bottom: white 8px solid;
+  border-right: white 8px solid;
+}
+
+.article-gradient {
+  background: linear-gradient(175deg, transparent, rgba(0, 0, 0, 0.4) 65%, rgba(0, 0, 0, 0.9), black);
+  position: absolute;
+}
+
+main .g1-3 {
+  height: 270px;
+}
+
+main .g2-3 {
+  height: 540px;
+}
+
+main article:nth-of-type(1) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/telegram-cryptocurrency-796x417.png) 50% no-repeat;
+  background-size: cover;
+  border-left: white 5px solid;
+}
+
+main article:nth-of-type(2) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay-796x530.jpg) 50% no-repeat;
+  background-size: cover;
+}
+
+main article:nth-of-type(3) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/facebook-libra-cryptocurrency-EU-796x417.jpg) 50% no-repeat;
+  background-size: cover;
+}
+
+/* ----------- Latest News ---------- */
+
+#latest-news {
+  padding-top: 40px;
+}
+
+#latest-news article,
+#apple article,
+#latest-deals article {
+  height: 250px;
+  float: left;
+  margin-bottom: 20px;
+  padding-right: 15px;
+}
+
+#latest-news article a img,
+#apple article a img {
+  width: 100%;
+  height: 50%;
+}
+
+/* ----------- Latest Funding ---------------- */
+#latest-funding article {
+  float: left;
+  margin-bottom: 20px;
+  position: relative;
+  background: rgb(255, 250, 248);
+  z-index: 90;
+  padding-bottom: 10px;
+  border-right: 15px solid white;
+  height: 235px;
+}
+
+.funding-large-div {
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(rgba(255, 68, 34) 40%, rgba(255, 68, 34, 0.08) 40%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding-left: 90px;
+}
+
+#latest-funding ul {
+  display: inline-flex;
+  height: 20px;
+  margin-top: -40px;
+  float: right;
+}
+
+#latest-funding ul li {
+  border-right: red 1px solid;
+  padding: 0 10px;
+  color: #f42;
+}
+
+.funding-article-img {
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#latest-funding .caps-title {
+  padding-left: 0;
+  color: rgb(85, 85, 85);
+  font-size: 0.8em;
+}
+
+.funding-small-icons-div {
+  padding-left: 10px;
+  margin-top: 35px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.funding-small-icons-div p:hover {
+  color: black;
+}
+
+#latest-funding p {
+  color: rgb(85, 85, 85);
+  padding: 0 10px;
+  line-height: 1.2;
+  font-size: 0.8em;
+}
+
+#latest-funding span {
+  color: #aaa;
+}
+
+.funding-title,
+#latest-funding h3 {
+  padding-top: 15px;
+  padding-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.funding-title {
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.funding-icons1,
+.funding-icons2 {
+  width: 15px;
+  transform: rotateY(180deg);
+  margin-right: 10px;
+}
+
+/* ----------- Articles ---------------- */
+#articles article {
+  float: left;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 90;
+  height: 750px;
+  border-right: solid 15px white;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/google-docs-word-count-368x276.jpg);
+  background-position: 100% 88px;
+  background-size: 100% 320px;
+  background-repeat: no-repeat;
+}
+
+#articles .caps-title {
+  font-size: 0.812em;
+}
+
+#articles .article-h2 {
+  font-size: 1.2em;
+}
+
+#articles .latest-articles .article-h2 {
+  font-size: 1em;
+  color: #f42;
+}
+
+.latest-articles {
+  height: 95px;
+  width: 75%;
+  background: rgba(255, 68, 34, 0.06);
+  float: left;
+}
+
+#articles .latest-articles .caps-title {
+  color: #f42;
+  margin-top: 10px;
+}
+
+#articles article .latest-img {
+  width: 25%;
+  float: right;
+  height: 95px;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Microsoft-To-Do.jpg);
+  background-position: 50%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+}
+
+.bullet {
+  color: #f42;
+  font-size: 2em;
+  line-height: 0;
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+#articles ul li {
+  display: inline-flex;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+#articles li a {
+  color: #555;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+/* ----------- Latest Deals ---------------- */
+
+#latest-deals article {
+  float: left;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#latest-deals article a img {
+  width: 100%;
+  height: 60%;
+}
+
+.price-tag {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg) no-repeat;
+  overflow: hidden;
+  color: #000;
+  height: 80px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+
+.price {
+  transform: rotate(45deg);
+  font-size: 0.8em;
+  font-weight: 700;
+  left: 8px;
+  position: relative;
+  top: 14px;
+}
+
+/* ----------- Footer ---------------- */
+
+footer section {
+  width: 100%;
+  height: 90px;
+  padding-top: 40px;
+}
+
+#social ul li a {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-image: url(img/FB.png);
+  background-position: 42% 45%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+#copyright {
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9em;
+}
+
+#copyright p {
+  margin-top: 0;
+  font-size: 0.9em;
+  line-height: normal;
+  width: 70%;
+}
+
+#copyright span {
+  color: red;
+}
+
+/* ------------- nth-of-type ------------------ */
+
+/* ------------- Header ---------------------- */
+
+header section:nth-of-type(2) {
+  background-color: white;
+  height: 50px;
+  padding-top: 15px;
+  color: #aaa;
+  font-family: "Oswald", sans-serif;
+}
+
+header section:nth-of-type(3) {
+  background-color: yellow;
+  height: 30px;
+  color: black;
+  padding-top: 8px;
+  font-size: 0.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-li:nth-of-type(2) {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+
+/* ------------- Main ---------------- */
+
+main article div {
+  height: 100%;
+  width: 100%;
+}
+
+main article:nth-of-type(1) header {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
+  width: 60%;
+  z-index: 98;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+main article:nth-of-type(1) div {
+  background: linear-gradient(170deg, rgba(255, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.5), black);
+}
+
+/* ------------- Latest Funding  ---------------- */
+
+.funding-small-icons-div:nth-of-type(2) {
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(255, 68, 34, 0.25);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+#latest-funding ul li:last-of-type {
+  border-right: none;
+}
+
+/* ------------- Articles  ---------------- */
+
+#articles article:nth-of-type(2) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/OnePlus-tv-hed.jpg);
+}
+
+#articles article:nth-of-type(3) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/app-store-apple-hed.png);
+}
+
+#articles article:nth-of-type(4) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/chineseverticalB1200.png);
+}
+
+#articles article:nth-of-type(5) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Image-by-Gerd-Altmann-from-Pixabay.jpg);
+}
+
+#articles article:nth-of-type(6) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Untitled-design-23.jpg);
+}
+
+#articles article:nth-of-type(7) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Orion-Doom-Bethesda-hed.jpg);
+}
+
+#articles article:nth-of-type(8) .latest-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Ring-Fit-Adventure.jpg);
+}
+
+#articles article:nth-of-type(2) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Fitbit_Versa_2_Special_Edition_Together_V3_Crop_1-368x276.jpg);
+}
+
+#articles article:nth-of-type(3) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/simjacker-attack-hed-368x276.jpg);
+}
+
+#articles article:nth-of-type(4) {
+  background-image: url(https://i.ytimg.com/vi/Z1jgaEO9aRs/hqdefault.jpg);
+}
+
+#articles article:nth-of-type(5) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Learning-AI-Programming-368x276.jpg);
+}
+
+#articles article:nth-of-type(6) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/quantum_mess-368x276.jpg);
+}
+
+#articles article:nth-of-type(7) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Pam-Angela-The-Office-368x276.jpg);
+}
+
+#articles article:nth-of-type(8) {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/pong-368x276.jpg);
+}
+
+main article:nth-of-type(1) div:hover {
+  background: linear-gradient(170deg, rgba(255, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4), black);
+}
+
+#articles div:nth-of-type(1) {
+  height: 325px;
+  width: 100%;
+  z-index: -1;
+  padding-top: 60%;
+  position: relative;
+  margin-bottom: 3px;
+}
+
+/* ------------- Footer  ---------------- */
+
+footer section:nth-of-type(1) {
+  height: 160px;
+  background-color: #131313;
+}
+
+#social ul li:nth-of-type(2) a {
+  background-image: url(img/twitter.png);
+}
+
+#social ul li:nth-of-type(3) a {
+  background-image: url(img/youtube.png);
+}
+
+#social ul li:nth-of-type(4) a {
+  background-image: url(img/ig.png);
+}
+
+#social ul li:nth-of-type(5) a {
+  background-image: url(img/pin.png);
+}
+
+#social ul li:nth-of-type(6) a {
+  background-image: url(img/mail.png);
+}
+
+#social ul li:nth-of-type(7) a {
+  background-image: url(img/rss.png);
+  background-size: 15px;
+}
+
+#social ul:nth-child(1) li {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #333;
+  margin: 8px;
+}
+
+#social ul:nth-of-type(2),
+#copyright p {
+  margin: auto;
+  color: #aaa;
+  margin-top: 20px;
+  font-size: 0.7em;
+}
+
+#social ul:nth-of-type(2) li {
+  margin: 5px;
+}
+
+#copyright img:nth-of-type(1) {
+  width: 70px;
+  height: 10px;
+}
+
+/* ------------- Hover ------------------ */
+
+h5:hover {
+  color: black;
+}
+
+.article-gradient:hover {
+  background: linear-gradient(175deg, transparent, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 0.8), black);
+  position: absolute;
+}
+
+#latest-funding ul li:hover {
+  color: black;
+}
+
+#social ul:nth-child(1) li:hover {
+  background-color: black;
+}
+
+#social ul:nth-of-type(2) li:hover {
+  color: white;
+}
+
+.section-title:hover {
+  color: black;
+}
+
+/* ------------- Media Queries ------------------ */
+
+@media only screen and (max-width: 1024px) {
+  /* ------------- Fonts 1020PX------------------ */
+
+  /* ----------- Header 1020PX------------- */
+
+  header div {
+    background: url(img/tnw.png) no-repeat;
+    background-size: cover;
+    z-index: auto;
+  }
+
+  header section:nth-of-type(1),
+  header section:nth-of-type(2) {
+    padding-left: 115px;
+  }
+
+  header section:nth-of-type(3) {
+    text-align: center;
+  }
+
+  /* ---------- Main 1020PX--------------- */
+
+  main .g1-3 {
+    height: 225px;
+  }
+
+  main .g2-3 {
+    height: 450px;
+  }
+
+  main article:nth-of-type(1) div {
+    background: linear-gradient(175deg, rgba(0, 0, 0, 0.4) 75%, black);
+  }
+
+  main article:nth-of-type(1) header {
+    background: none;
+    height: 30%;
+  }
+
+  /* ----------- FONTS---------- */
+
+  h3 {
+    font-size: 0.85em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  main h3 {
+    display: none;
+  }
+
+  /* ----------- Latest Funding 1020PX---------------- */
+
+  #latest-funding article:last-child {
+    display: none;
+  }
+
+  #latest-funding ul {
+    width: 100%;
+    margin-bottom: 20px;
+    float: none;
+  }
+
+  /* ----------- Articles 1020PX---------------- */
+
+  /* ----------- Latest Deals 1020PX---------------- */
+
+  /* ----------- Footer 1020PX---------------- */
+
+  /* -------------- GRID STRUCTURE 1020PX--------------- */
+
+  #articles .g1-3 {
+    width: 50%;
+  }
+
+  .g1-4 {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* -------------- GRID STRUCTURE 760PX--------------- */
+
+  .g1-3 {
+    width: 100%;
+  }
+
+  .g1-4 {
+    width: 100%;
+  }
+
+  /* ---------- Header 760PX--------------- */
+
+  header div {
+    height: 50px;
+    background-position-y: 45%;
+  }
+
+  header section:nth-of-type(1) {
+    display: none;
+  }
+
+  header section:nth-of-type(2) ul:nth-of-type(1) {
+    display: none;
+  }
+
+  header section:nth-of-type(2) ul:nth-of-type(2) {
+    right: 20px;
+    top: 0;
+  }
+
+  .menu-li:nth-of-type(2) {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    border-left: 1px #eee solid;
+    display: block;
+  }
+
+  #menu-icon {
+    background: url(img/menu.png) 0/30px no-repeat;
+    top: 0;
+    right: -5px;
+    position: absolute;
+    height: 50px;
+    width: 35px;
+    display: block;
+  }
+
+  /* ---------- Main 760PX--------------- */
+
+  main {
+    margin-top: 84px;
+  }
+
+  main .g1-3,
+  main .g2-3 {
+    width: 100%;
+    height: 220px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  /* ----------- Latest News 760PX---------- */
+
+  #latest-news article,
+  #apple article {
+    height: 75px;
+    position: relative;
+  }
+
+  #latest-news article a img,
+  #apple article a img {
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  #latest-news a,
+  #apple a {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  h5 {
+    padding-left: 84px;
+    position: absolute;
+    top: 50%;
+  }
+
+  /* ----------- Latest Funding 760PX---------------- */
+
+  #latest-funding article {
+    height: 200px;
+    margin-bottom: 25px;
+    border: none;
+  }
+
+  #latest-funding ul {
+    display: contents;
+  }
+
+  #latest-funding ul li {
+    padding: 10px 0;
+  }
+
+  /* ----------- Articles 760PX---------------- */
+  #articles .g1-3 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #articles article .latest-img {
+    width: 15%;
+  }
+
+  .latest-articles {
+    width: 85%;
+  }
+
+  /* ----------- Latest Deals 760PX---------------- */
+
+  #latest-deals article {
+    height: 75px;
+    position: relative;
+  }
+
+  #latest-deals article a img {
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  #latest-deals a {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .price-tag {
+    display: none;
+  }
+
+  /* ----------- Footer 760PX---------------- */
+
+  #copyright p {
+    margin-top: 0;
+    font-size: 0.75em;
+    line-height: normal;
+  }
+}
