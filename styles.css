@@ -302,6 +302,7 @@ header ul li {
 
 header ul li:hover {
   color: white;
+  cursor: pointer;
 }
 
 #menu-icon {
